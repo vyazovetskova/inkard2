@@ -1,0 +1,1155 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (72.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (168.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+  [4;36;1mSQL (120.0ms)[0m   [0;1mCREATE TABLE `clients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cl_org` varchar(255), `cl_fio` varchar(255), `cl_inn` varchar(255), `cl_kpp` varchar(255), `cl_adrur` varchar(255), `cl_adrfiz` varchar(255), `cl_rs` varchar(255), `cl_bik` varchar(255), `cl_tel` varchar(255), `cl_bank` varchar(255), `cl_ks` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100506190918')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 23:18:49) [GET]
+
+NoMethodError (undefined method `scaffold' for BuhgalterController:Class):
+  app/controllers/buhgalter_controller.rb:2
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.0ms)
+Rendered rescues/_request_and_response (6.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 23:19:56) [GET]
+
+NoMethodError (undefined method `scaffold' for BuhgalterController:Class):
+  app/controllers/buhgalter_controller.rb:2
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 23:25:07) [GET]
+
+NoMethodError (undefined method `scaffold' for BuhgalterController:Class):
+  app/controllers/buhgalter_controller.rb:2
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:42:48) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #20 of app/views/buhgalter/clients.erb:
+17: <td>БИК</td>
+18: <td>Квитанция</td>
+19: </tr>
+20: <% @allclients.each{|u| %>
+21:   <tr>
+22: <td><%=u.cl_fio%></td>
+23: <td><%=u.cl_org%></td>
+
+    app/views/buhgalter/clients.erb:20
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (104.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:44:07) [GET]
+
+NameError (uninitialized constant BuhgalterController::Pokupatel):
+  app/controllers/buhgalter_controller.rb:9:in `clients'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:44:27) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 163ms (View: 145, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 23:44:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/forall.css" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:44:59) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 30ms (View: 13, DB: 4) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:45:41) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 30ms (View: 12, DB: 5) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:45:47) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 113ms (View: 96, DB: 5) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:46:50) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 30ms (View: 12, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:47:05) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 29ms (View: 12, DB: 5) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `d_no` varchar(255), `asum` decimal(9,2), `datago` date, `datastop` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100506194924')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:08:57) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 144ms (View: 12, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:09:00) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 30ms (View: 12, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 00:11:58) [GET]
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+
+ActionView::TemplateError (undefined method `cl_fio' for #<Order:0x3f4b304>) on line #4 of app/views/buhgalter/orders.erb:
+1: <% @allorders.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+5: 
+6: </tr>
+7:   <%}%>
+
+    app/views/buhgalter/orders.erb:4
+    app/views/buhgalter/orders.erb:1:in `each'
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (186.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 00:13:33) [GET]
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Completed in 37ms (View: 19, DB: 6) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (121.0ms)[0m   [0;1mCREATE TABLE `providers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `p_org` varchar(255), `p_fio` varchar(255), `p_inn` varchar(255), `p_kpp` varchar(255), `p_adrur` varchar(255), `p_adrfiz` varchar(255), `p_rs` varchar(255), `p_bik` varchar(255), `p_tel` varchar(255), `p_bank` varchar(255), `p_ks` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100506202619')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `providers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 00:34:30) [GET]
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Completed in 40ms (View: 21, DB: 5) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:34:32) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 32ms (View: 12, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#partners (for 127.0.0.1 at 2010-05-07 00:34:33) [GET]
+
+ActionController::UnknownAction (No action responded to partners. Actions: clients, orders, and providers):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:35:07) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 129ms (View: 111, DB: 4) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:35:09) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 30ms (View: 11, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-07 00:35:10) [GET]
+  [4;36;1mProvider Load (0.0ms)[0m   [0;1mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+  [4;35;1mProvider Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+Completed in 44ms (View: 26, DB: 6) | 200 OK [http://localhost/buhgalter/providers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:35:14) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 12, DB: 5) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:38:48) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 13, DB: 4) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (63.0ms)[0m   [0;1mDROP TABLE `providers`[0m
+  [4;35;1mSQL (54.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100506202619'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (114.0ms)[0m   [0;1mCREATE TABLE `providers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `p_org` varchar(255), `p_fio` varchar(255), `p_inn` varchar(255), `p_kpp` varchar(255), `p_adrur` varchar(255), `p_adrfiz` varchar(255), `p_rs` varchar(255), `p_bik` varchar(255), `p_tel` varchar(255), `p_bank` varchar(255), `p_ks` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100506202619')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (76.0ms)[0m   [0;1mDROP TABLE `providers`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100506202619'[0m
+Migrating to CreateOrders (20100506194924)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Unknown table 'orders': DROP TABLE `orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (97.0ms)[0m   [0;1mCREATE TABLE `providers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `p_org` varchar(255), `p_fio` varchar(255), `p_inn` varchar(255), `p_kpp` varchar(255), `p_adrur` varchar(255), `p_adrfiz` varchar(255), `p_rs` varchar(255), `p_bik` varchar(255), `p_tel` varchar(255), `p_bank` varchar(255), `p_ks` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (25.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100506202619')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateProviders (20100506202619)
+Migrating to CreateOrders (20100507133407)
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `d_no` varchar(255), `asum` decimal(9,2), `datago` date, `datastop` date, `client_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100507133407')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `providers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 17:37:59) [GET]
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+Completed in 150ms (View: 99, DB: 1) | 200 OK [http://localhost/buhgalter/orders]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 17:39:20) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+
+ActionView::TemplateError (undefined method `cl_fio' for #<Order:0x62add24>) on line #4 of app/views/buhgalter/orders.erb:
+1: <% @allorders.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+5: Тут проблема с совместимостью заказчика и заказа!!!!
+6: </tr>
+7:   <%}%>
+
+    app/views/buhgalter/orders.erb:4
+    app/views/buhgalter/orders.erb:1:in `each'
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 17:41:12) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 169ms (View: 53, DB: 4) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 17:41:14) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 32ms (View: 13, DB: 7) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-07 17:41:16) [GET]
+  [4;35;1mProvider Load (0.0ms)[0m   [0mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+Completed in 85ms (View: 72, DB: 1) | 200 OK [http://localhost/buhgalter/providers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 17:41:19) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 13, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 17:49:59) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+
+ActionView::TemplateError (undefined method `cl_fio' for #<Order:0x3862704>) on line #4 of app/views/buhgalter/orders.erb:
+1: <% @allorders.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+5: Тут проблема с совместимостью заказчика и заказа!!!!
+6: </tr>
+7:   <%}%>
+
+    app/views/buhgalter/orders.erb:4
+    app/views/buhgalter/orders.erb:1:in `each'
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 17:50:23) [GET]
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+
+ActionView::TemplateError (undefined method `clients' for #<Array:0x62763ec>) on line #1 of app/views/buhgalter/orders.erb:
+1: <% @allorders.clients.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (161.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 17:52:02) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+
+ActionView::TemplateError (undefined method `orders' for #<Array:0x6476b74>) on line #1 of app/views/buhgalter/orders.erb:
+1: <% @allclients.orders.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 22:13:28) [GET]
+  [4;36;1mClient Load (94.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mClient Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+
+ActionView::TemplateError (undefined method `orders' for #<Array:0x6504b68>) on line #1 of app/views/buhgalter/orders.erb:
+1: <% @allclients.orders.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (31.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 22:14:14) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mClient Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+
+ActionView::TemplateError (undefined method `order' for #<Array:0x66b9ff8>) on line #1 of app/views/buhgalter/orders.erb:
+1: <% @allclients.order.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 22:17:01) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Load (31.0ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mClient Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 219ms (View: 172, DB: 31) | 200 OK [http://localhost/buhgalter/orders]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 20:29:02) [GET]
+  [4;35;1mClient Load (31.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 172ms (View: 125, DB: 31) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:29:23) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (15.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 78ms (View: 47, DB: 15) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:38:02) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mOrder Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mClient Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 78ms (View: 47, DB: 16) | 200 OK [http://localhost/buhgalter/orders]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:38:37) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:39:16) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mOrder Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mClient Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/buhgalter/orders]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 20:39:19) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-08 20:39:21) [GET]
+  [4;35;1mProvider Load (93.0ms)[0m   [0mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+Completed in 203ms (View: 16, DB: 93) | 200 OK [http://localhost/buhgalter/providers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-08 20:39:26) [GET]
+  [4;36;1mProvider Load (15.0ms)[0m   [0;1mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/buhgalter/providers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 20:39:27) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 20:41:40) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:41:42) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 63ms (View: 32, DB: 15) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 20:41:45) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-08 20:41:46) [GET]
+  [4;36;1mProvider Load (0.0ms)[0m   [0;1mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/buhgalter/providers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:41:50) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 140ms (View: 125, DB: 0) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:44:33) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Load (1.0ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mOrder Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 56ms (View: 34, DB: 8) | 200 OK [http://localhost/buhgalter/orders]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-08 20:44:35) [GET]
+  [4;35;1mProvider Load (1.0ms)[0m   [0mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+  [4;36;1mProvider Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+Completed in 31ms (View: 13, DB: 6) | 200 OK [http://localhost/buhgalter/providers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:44:41) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 56ms (View: 33, DB: 12) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateProviders (20100506202619)
+Migrating to CreateOrders (20100507133407)
+Migrating to CreatePurchases (20100508164937)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateProviders (20100506202619)
+Migrating to CreateOrders (20100507133407)
+Migrating to CreatePurchases (20100508164937)
+  [4;36;1mSQL (112.0ms)[0m   [0;1mCREATE TABLE `purchases` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `z_no` varchar(255), `datain` date, `asum` decimal(9,2), `datadone` date, `provider_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100508164937')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `providers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `purchases`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `purchases`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `purchases`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchase (for 127.0.0.1 at 2010-05-08 21:01:26) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/purchase
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM `purchases` [0m
+  [4;35;1mPurchase Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `purchases`[0m
+  [4;36;1mProvider Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mProvider Load (1.0ms)[0m   [0mSELECT * FROM `providers` WHERE (`providers`.`id` = 1) [0m
+Completed in 70ms (View: 58, DB: 10) | 200 OK [http://localhost/buhgalter/purchase]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchase (for 127.0.0.1 at 2010-05-08 21:02:35) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/purchase
+  [4;36;1mPurchase Load (1.0ms)[0m   [0;1mSELECT * FROM `purchases` [0m
+  [4;35;1mPurchase Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `purchases`[0m
+  [4;36;1mProvider Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mProvider Load (0.0ms)[0m   [0mSELECT * FROM `providers` WHERE (`providers`.`id` = 1) [0m
+Completed in 69ms (View: 58, DB: 8) | 200 OK [http://localhost/buhgalter/purchase]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchases (for 127.0.0.1 at 2010-05-08 21:02:39) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM `purchases` [0m
+
+ActionView::MissingTemplate (Missing template buhgalter/purchases.erb in view path app/views):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchase (for 127.0.0.1 at 2010-05-08 21:03:08) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/purchase
+  [4;35;1mPurchase Load (1.0ms)[0m   [0mSELECT * FROM `purchases` [0m
+  [4;36;1mPurchase Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `purchases`[0m
+  [4;35;1mProvider Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mProvider Load (1.0ms)[0m   [0;1mSELECT * FROM `providers` WHERE (`providers`.`id` = 1) [0m
+Completed in 71ms (View: 58, DB: 11) | 200 OK [http://localhost/buhgalter/purchase]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchase (for 127.0.0.1 at 2010-05-08 21:03:11) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/purchase
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM `purchases` [0m
+  [4;36;1mPurchase Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `purchases`[0m
+  [4;35;1mProvider Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mProvider Load (1.0ms)[0m   [0;1mSELECT * FROM `providers` WHERE (`providers`.`id` = 1) [0m
+Completed in 57ms (View: 45, DB: 9) | 200 OK [http://localhost/buhgalter/purchase]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 21:03:13) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 57ms (View: 35, DB: 9) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchase (for 127.0.0.1 at 2010-05-08 21:03:15) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/purchase
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM `purchases` [0m
+  [4;35;1mPurchase Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `purchases`[0m
+  [4;36;1mProvider Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mProvider Load (1.0ms)[0m   [0mSELECT * FROM `providers` WHERE (`providers`.`id` = 1) [0m
+Completed in 56ms (View: 43, DB: 11) | 200 OK [http://localhost/buhgalter/purchase]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 21:03:16) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 32ms (View: 14, DB: 5) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-08 21:03:18) [GET]
+  [4;36;1mProvider Load (1.0ms)[0m   [0;1mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+  [4;35;1mProvider Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+Completed in 33ms (View: 14, DB: 5) | 200 OK [http://localhost/buhgalter/providers]
