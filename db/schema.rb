@@ -9,7 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100508164937) do
+ActiveRecord::Schema.define(:version => 20100511083934) do
+
+  create_table "catalogs", :force => true do |t|
+    t.string   "art"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "clients", :force => true do |t|
     t.string   "cl_org"
@@ -23,6 +30,17 @@ ActiveRecord::Schema.define(:version => 20100508164937) do
     t.string   "cl_tel"
     t.string   "cl_bank"
     t.string   "cl_ks"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "descriptions", :force => true do |t|
+    t.integer  "catalod_id"
+    t.decimal  "dlina",      :precision => 3, :scale => 2
+    t.string   "color"
+    t.integer  "shin"
+    t.decimal  "cost",       :precision => 7, :scale => 2
+    t.string   "fulart"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
