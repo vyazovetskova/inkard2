@@ -1,0 +1,56 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>рабочее место:Менеджер</title>
+        <%= stylesheet_link_tag 'forall' %>
+
+  </head>
+
+
+
+
+<body>
+  <div class="mainmenu">
+  Рабочее место : Менеджер
+   <ul>
+     
+     <li class="zagolovok"> Просмотреть заказы</li>
+        <ul>
+          <li><%= link_to "Просроченные", :action =>"view_outstanding_orders" %> </li>
+          <li><%= link_to "Выполненные", :action =>"view_complited_orders" %> </li>
+          <li><%= link_to "Готовые", :action =>"view_ready_orders" %> </li>
+          <li><%= link_to "Текущие", :action =>"view_current_orders" %> </li>
+        </ul>
+     <li class="zagolovok"><%= link_to "Редактировать заказы" %></li>
+     <li class="zagolovok"><%= link_to "Новый заказ" %></li>
+     <li class="zagolovok"> Просмотреть закупки</li>
+        <ul>
+          <li><%= link_to "Новые требуемые" %> </li>
+          <li><%= link_to "Просроченные" %> </li>
+        </ul>
+     <li class="zagolovok"><%= link_to "Редактировать закупки" %></li>
+     <li class="zagolovok"><%= link_to "Новая закупка" %></li>
+     <li class="zagolovok">Клиенты</li>
+        <ul>
+          <li><%= link_to "Редактировать данные", :action =>"clients" %> </li>
+          <li><%= link_to "Новый клиент" %> </li>
+        </ul>
+     <li class="zagolovok"><%= link_to "Каталог товаров" %></li>
+     <li class="zagolovok">Поставщики</li>
+        <ul>
+          <li><%= link_to "Редактировать данные" %> </li>
+          <li><%= link_to "Новый поставщик" %> </li>
+        </ul>
+     <li class="zagolovok">Поставки</li>
+        <ul>
+          <li><%= link_to "Редактировать данные" %> </li>
+          <li><%= link_to "Новая поставка" %> </li>
+        </ul>
+     <li class="zagolovok"><%= link_to "Возврат" %></li>
+   </ul>
+  </div>
+
+  <div class="right"><%= yield :layout %>
+  </div>
+</body>
+</html>

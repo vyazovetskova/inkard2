@@ -1,0 +1,39 @@
+/* 
+    Document   : forall
+    Created on : 10.05.2010, 22:11:26
+    Author     : dmitry
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root {
+    display: block;
+}
+
+.zagolovok {
+
+    font-size: 150%;
+    text-decoration:underline;
+
+}
+.mainmenu{font-family: "Arial";
+font-size: 120%;
+float: left;
+	width: 400px;
+        border-right: 3px solid black;
+}
+
+.right {
+
+}
+
+li{
+ list-style-type: none;}
+
+a {color: black;
+text-decoration: none}

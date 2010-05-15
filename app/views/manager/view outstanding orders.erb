@@ -1,0 +1,37 @@
+<table border="1" cellspacing="0" cellpadding="4">
+  <caption>Просроченные заказы</caption>
+  <br>
+<tr>
+<td>Организация</td>
+<td>ФИО покупателя</td>
+<td>№ договора</td>
+<td>Сумма</td>
+<td>Артикул</td>
+<td>Состояние</td>
+<td>Дата оформления</td>
+<td>Срок исполнения</td>
+
+</tr>
+
+<% @OutstOrders.each{|u| %>
+  <% @allclients.each{|c| %>
+    <% @readies.each{|r| %>
+  <tr>
+<td><%=c.cl_org%></td>
+<td><%=c.cl_fio%></td>
+<td><%=u.d_no%></td>
+<td><%=u.asum%></td>
+<td><%=r.fulart%></td>
+<td><%=r.sost%></td>
+<td><%=u.datago%></td>
+<td><%=u.datastop%></td>
+
+</tr>
+    <%}%>
+  <%}%>
+<%}%>
+</table>
+
+
+
+<%= "outstanding orders" %>
