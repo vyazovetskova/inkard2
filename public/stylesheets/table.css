@@ -1,0 +1,20 @@
+/* 
+    Document   : table
+    Created on : 16.05.2010, 20:59:11
+    Author     : dmitry
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+table{
+    font-size: 70%;
+}

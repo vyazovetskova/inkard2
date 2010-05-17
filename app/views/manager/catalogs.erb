@@ -1,0 +1,23 @@
+<h1>Каталог товаров</h1>
+<table border="1" cellspacing="0" cellpadding="4">
+  <caption>Просмотр каталога товаров</caption>
+  <tr>
+    <td>Артикул</td>
+    <td>Наименование</td>
+    <td>Цвет</td>
+    <td>Длина</td>
+    <td>Шины</td>
+    <td>Цена</td>
+  </tr>
+<% for description in Description.find(:all) %>
+  <tr>
+    <td><%= description.fulart %></td>
+    <td><%= description.catalog.name %> </td>
+    <td><%= description.color %></td>
+    <td><%= description.dlina%> </td>
+    <td><%= description.shin%> </td>
+    <td><%= description.cost%> </td>
+  </tr>
+<% end %>
+</table>
+
