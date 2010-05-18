@@ -14,15 +14,11 @@
   Рабочее место : Менеджер
    <ul>
      
-     <li class="zagolovok"> Просмотреть заказы</li>
-        <ul>
-          <li><%= link_to "Просроченные", :action =>"view_outstanding_orders" %> </li>
-          <li><%= link_to "Выполненные", :action =>"view_complited_orders" %> </li>
-          <li><%= link_to "Готовые", :action =>"view_ready_orders" %> </li>
-          <li><%= link_to "Текущие", :action =>"view_current_orders" %> </li>
-        </ul>
-     <li class="zagolovok"><%= link_to "Редактировать заказы" %></li>
-     <li class="zagolovok"><%= link_to "Новый заказ" %></li>
+     <li class="zagolovok">Заказы</li>
+       <ul>
+        <li><%= link_to "Редактировать заказы", :action => "orders"%></li>
+        <li><%= link_to "Новый заказ" %></li>
+       </ul> 
      <li class="zagolovok"> Просмотреть закупки</li>
         <ul>
           <li><%= link_to "Новые требуемые" %> </li>
@@ -35,7 +31,7 @@
           <li><%= link_to "Редактировать данные", :action =>"clients" %> </li>
           <li><%= link_to "Новый клиент" %> </li>
         </ul>
-     <li class="zagolovok"><%= link_to "Каталог товаров" %></li>
+     <li class="zagolovok"><%= link_to "Каталог товаров", :action => "catalogs" %></li>
      <li class="zagolovok">Поставщики</li>
         <ul>
           <li><%= link_to "Редактировать данные" %> </li>

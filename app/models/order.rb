@@ -9,11 +9,11 @@ class Order < ActiveRecord::Base
   has_many :ready
 
   def validate
-    if Order.asum <= 0.0
-      errors.add ( "Данные введены не верно!")
+    if self.asum <= 0.0
+      errors.add( "Данные введены не верно!")
     end
-    if Order.datastop<=Order.datago
-      errors.add ( "Данные введены не верно!")
+    if self.datastop<=self.datago
+      errors.add( "Данные введены не верно!")
     end
   end
 end

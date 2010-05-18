@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100513152059) do
+ActiveRecord::Schema.define(:version => 20100514184752) do
 
   create_table "catalogs", :force => true do |t|
     t.string   "art"
@@ -35,7 +35,6 @@ ActiveRecord::Schema.define(:version => 20100513152059) do
   end
 
   create_table "descriptions", :force => true do |t|
-    t.integer  "catalod_id"
     t.decimal  "dlina",      :precision => 3, :scale => 2
     t.string   "color"
     t.integer  "shin"
@@ -43,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20100513152059) do
     t.string   "fulart"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "catalog_id"
   end
 
   create_table "orders", :force => true do |t|

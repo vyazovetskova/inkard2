@@ -8,16 +8,16 @@ class Ready < ActiveRecord::Base
   belongs_to :description
   
   def validate
-    if Ready.sost!=1 || Ready.sost!=2 || Ready.sost!=3
-      errors.add ( "Данные введены не верно!")
+    if self.sost!=1 || self.sost!=2 || self.sost!=3
+      errors.add( "Данные введены не верно!")
     end
 
-    if Ready.brak<0
-      errors.add ( "Данные введены не верно!")
+    if self.brak<0
+      errors.add( "Данные введены не верно!")
     end
 
-    if Ready.kol<=0
-      errors.add ( "Данные введены не верно!")
+    if self.kol<=0
+      errors.add( "Данные введены не верно!")
     end
   end
 end

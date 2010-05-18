@@ -8,20 +8,10 @@ class ManagerController < ApplicationController
     
   end
   ############
-  def view_outstanding_orders
-    @OutstOrders=Order.all
-  end
+  
 
-  def view_complited_orders
-    @CompliteOrders=Order.all
-  end
-
-  def view_ready_orders
-    @ReadyOrders=Order.all
-  end
-
-  def view_current_orders
-    @CurOrders=Order.all
+  def orders
+    @allorders=Order.all
   end
 
    ###########
@@ -30,14 +20,14 @@ class ManagerController < ApplicationController
   end
 
   #############
-  def view_redies
-    @redies=Ready.all
+  def redies
+    @allredies=Ready.all
   end
 
   ############
-  #def orders
-
-  #end
+  def catalogs
+    @allCatalog=Catalog.all
+  end
 
   ##############
   #def parts_providers
