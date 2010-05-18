@@ -6,7 +6,7 @@ class PartsPurchase < ActiveRecord::Base
   belongs_to :purchase
   def validate
     if PartsPurchase.kol <= 0
-      errors.add ( "Данные введены не верно!")
+      errors.add( "Данные введены не верно!")
     end
   end
 end

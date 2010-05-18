@@ -8,7 +8,7 @@ class Purchase < ActiveRecord::Base #закупки
 
   def validate
     if Purchase.asum <= 0.0
-      errors.add ( "Данные введены не верно!")
+      errors.add( "Данные введены не верно!")
     end
   end
 end

@@ -6,7 +6,7 @@ class PartsProvider < ActiveRecord::Base
   belongs_to :provider
   def validate
     if PartsProvider.cost <= 0.0
-      errors.add ( "Данные введены не верно!")
+      errors.add( "Данные введены не верно!")
     end
   end
 end
