@@ -1,0 +1,34 @@
+<table border="1" cellspacing="0" cellpadding="4">
+  <caption>Договоры к выплате</caption>
+  <tr>
+    <td>Номер договора</td>
+    <td>Сумма, руб</td>
+    <td>ФИО поставщика</td>
+    <td>Организация</td>
+    <td>ИНН</td>
+    <td>КПП</td>
+    <td>р/c</td>
+    <td>Банк</td>
+    <td>к/c</td>
+    <td>БИК</td>
+    <td>Телефон</td>
+    <td>Квитанция</td>
+  </tr>
+<% for order in Purchase.find(:all) %>
+  <tr>
+    <td><%= order.z_no %></td>
+    <td><%= order.asum %> </td>
+    <td><%= order.provider.p_fio %></td>
+    <td><%= order.provider.p_org  %> </td>
+    <td><%= order.provider.p_inn%> </td>
+    <td><%= order.provider.p_kpp%> </td>
+    <td><%= order.provider.p_rs%> </td>
+    <td><%= order.provider.p_bank%> </td>
+    <td><%= order.provider.p_ks%> </td>
+    <td><%= order.provider.p_bik%> </td>
+    <td><%= order.provider.p_tel%> </td>
+    <td><a href="">печать</a> </td>
+  </tr>
+<% end %>
+</table>
+

@@ -1,0 +1,36 @@
+
+
+<table border="1" cellspacing="0" cellpadding="4">
+  <caption>Партнеры</caption>
+  <br>
+<tr>
+<td>ФИО поставщика</td>
+<td>Организация</td>
+<td>ИНН</td>
+<td>КПП</td>
+<td>р/c</td>
+<td>Банк</td>
+<td>к/с</td>
+<td>Телефон</td>
+<td>Юридический адрес</td>
+<td>Физический адрес</td>
+<td>БИК</td>
+
+</tr>
+<% @allproviders.each{|u| %>
+  <tr>
+<td><%=u.p_fio%></td>
+<td><%=u.p_org%></td>
+<td><%=u.p_inn%></td>
+<td><%=u.p_kpp%></td>
+<td><%=u.p_rs%></td>
+<td><%=u.p_bank%></td>
+<td><%=u.p_ks%></td>
+<td><%=u.p_tel%></td>
+<td><%=u.p_adrur%></td>
+<td><%=u.p_adrfiz%></td>
+
+<td><%=u.p_bik%></td>
+</tr>
+  <%}%>
+</table>

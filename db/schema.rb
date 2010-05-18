@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(:version => 20100514184752) do
     t.datetime "updated_at"
   end
 
+
   create_table "parts_providers", :force => true do |t|
     t.string   "art"
     t.decimal  "cost",        :precision => 7, :scale => 2

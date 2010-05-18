@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>рабочее место:Бухгалтер</title>
+        <%= stylesheet_link_tag 'forall' %>
+
+  </head>
+
+
+
+
+<body>
+  <div class="mainmenu">
+  Рабочее мето : Бухгалтер
+   <ul>
+     <li class="zagolovok"><%= link_to "Договоры к оплате" , :action =>"orders"%></li>
+     <li class="zagolovok"> <%= link_to "Договоры к выплате" , :action =>"purchase"%></li>
+     <li class="zagolovok"> Просмотр данных</li>
+        <ul>
+        <li><%= link_to "Клиенты" , :action =>"clients"%> </li>
+         <li><%= link_to "Партнеры" , :action =>"providers"%> </li>
+          
+        </ul>
+     
+
+
+   </ul>
+  </div>
+  <div class="right"><%= yield :layout %>
+    </div>
+</body>
+</html>
+

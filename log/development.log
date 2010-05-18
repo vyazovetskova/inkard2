@@ -1,3 +1,4 @@
+
 /!\ FAILSAFE /!\  Tue May 11 00:32:20 +0400 2010
   Status: 500 Internal Server Error
   Unknown database 'inkard2'
@@ -2136,3 +2137,3430 @@ Rendering manager/orders
   [4;36;1mClient Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
   [4;35;1mClient Load (0.7ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
 Completed in 112ms (View: 67, DB: 19) | 200 OK [http://localhost/manager/orders]
+=======
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (72.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (168.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+  [4;36;1mSQL (120.0ms)[0m   [0;1mCREATE TABLE `clients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cl_org` varchar(255), `cl_fio` varchar(255), `cl_inn` varchar(255), `cl_kpp` varchar(255), `cl_adrur` varchar(255), `cl_adrfiz` varchar(255), `cl_rs` varchar(255), `cl_bik` varchar(255), `cl_tel` varchar(255), `cl_bank` varchar(255), `cl_ks` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100506190918')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 23:18:49) [GET]
+
+NoMethodError (undefined method `scaffold' for BuhgalterController:Class):
+  app/controllers/buhgalter_controller.rb:2
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.0ms)
+Rendered rescues/_request_and_response (6.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 23:19:56) [GET]
+
+NoMethodError (undefined method `scaffold' for BuhgalterController:Class):
+  app/controllers/buhgalter_controller.rb:2
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 23:25:07) [GET]
+
+NoMethodError (undefined method `scaffold' for BuhgalterController:Class):
+  app/controllers/buhgalter_controller.rb:2
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:42:48) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #20 of app/views/buhgalter/clients.erb:
+17: <td>БИК</td>
+18: <td>Квитанция</td>
+19: </tr>
+20: <% @allclients.each{|u| %>
+21:   <tr>
+22: <td><%=u.cl_fio%></td>
+23: <td><%=u.cl_org%></td>
+
+    app/views/buhgalter/clients.erb:20
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (104.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:44:07) [GET]
+
+NameError (uninitialized constant BuhgalterController::Pokupatel):
+  app/controllers/buhgalter_controller.rb:9:in `clients'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:44:27) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 163ms (View: 145, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 23:44:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/forall.css" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:44:59) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 30ms (View: 13, DB: 4) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:45:41) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 30ms (View: 12, DB: 5) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:45:47) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 113ms (View: 96, DB: 5) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:46:50) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 30ms (View: 12, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-06 23:47:05) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 29ms (View: 12, DB: 5) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `d_no` varchar(255), `asum` decimal(9,2), `datago` date, `datastop` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100506194924')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:08:57) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 144ms (View: 12, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:09:00) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 30ms (View: 12, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 00:11:58) [GET]
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+
+ActionView::TemplateError (undefined method `cl_fio' for #<Order:0x3f4b304>) on line #4 of app/views/buhgalter/orders.erb:
+1: <% @allorders.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+5: 
+6: </tr>
+7:   <%}%>
+
+    app/views/buhgalter/orders.erb:4
+    app/views/buhgalter/orders.erb:1:in `each'
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (186.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 00:13:33) [GET]
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Completed in 37ms (View: 19, DB: 6) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (121.0ms)[0m   [0;1mCREATE TABLE `providers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `p_org` varchar(255), `p_fio` varchar(255), `p_inn` varchar(255), `p_kpp` varchar(255), `p_adrur` varchar(255), `p_adrfiz` varchar(255), `p_rs` varchar(255), `p_bik` varchar(255), `p_tel` varchar(255), `p_bank` varchar(255), `p_ks` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100506202619')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `providers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 00:34:30) [GET]
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Completed in 40ms (View: 21, DB: 5) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:34:32) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 32ms (View: 12, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#partners (for 127.0.0.1 at 2010-05-07 00:34:33) [GET]
+
+ActionController::UnknownAction (No action responded to partners. Actions: clients, orders, and providers):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:35:07) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 129ms (View: 111, DB: 4) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:35:09) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 30ms (View: 11, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-07 00:35:10) [GET]
+  [4;36;1mProvider Load (0.0ms)[0m   [0;1mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+  [4;35;1mProvider Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+Completed in 44ms (View: 26, DB: 6) | 200 OK [http://localhost/buhgalter/providers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:35:14) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 12, DB: 5) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 00:38:48) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 13, DB: 4) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (63.0ms)[0m   [0;1mDROP TABLE `providers`[0m
+  [4;35;1mSQL (54.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100506202619'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (114.0ms)[0m   [0;1mCREATE TABLE `providers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `p_org` varchar(255), `p_fio` varchar(255), `p_inn` varchar(255), `p_kpp` varchar(255), `p_adrur` varchar(255), `p_adrfiz` varchar(255), `p_rs` varchar(255), `p_bik` varchar(255), `p_tel` varchar(255), `p_bank` varchar(255), `p_ks` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100506202619')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (76.0ms)[0m   [0;1mDROP TABLE `providers`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100506202619'[0m
+Migrating to CreateOrders (20100506194924)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Unknown table 'orders': DROP TABLE `orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateOrders (20100506194924)
+Migrating to CreateProviders (20100506202619)
+  [4;36;1mSQL (97.0ms)[0m   [0;1mCREATE TABLE `providers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `p_org` varchar(255), `p_fio` varchar(255), `p_inn` varchar(255), `p_kpp` varchar(255), `p_adrur` varchar(255), `p_adrfiz` varchar(255), `p_rs` varchar(255), `p_bik` varchar(255), `p_tel` varchar(255), `p_bank` varchar(255), `p_ks` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (25.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100506202619')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateProviders (20100506202619)
+Migrating to CreateOrders (20100507133407)
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `d_no` varchar(255), `asum` decimal(9,2), `datago` date, `datastop` date, `client_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100507133407')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `providers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 17:37:59) [GET]
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+Completed in 150ms (View: 99, DB: 1) | 200 OK [http://localhost/buhgalter/orders]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 17:39:20) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+
+ActionView::TemplateError (undefined method `cl_fio' for #<Order:0x62add24>) on line #4 of app/views/buhgalter/orders.erb:
+1: <% @allorders.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+5: Тут проблема с совместимостью заказчика и заказа!!!!
+6: </tr>
+7:   <%}%>
+
+    app/views/buhgalter/orders.erb:4
+    app/views/buhgalter/orders.erb:1:in `each'
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 17:41:12) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 169ms (View: 53, DB: 4) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 17:41:14) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 32ms (View: 13, DB: 7) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-07 17:41:16) [GET]
+  [4;35;1mProvider Load (0.0ms)[0m   [0mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+Completed in 85ms (View: 72, DB: 1) | 200 OK [http://localhost/buhgalter/providers]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-07 17:41:19) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 13, DB: 6) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 17:49:59) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+
+ActionView::TemplateError (undefined method `cl_fio' for #<Order:0x3862704>) on line #4 of app/views/buhgalter/orders.erb:
+1: <% @allorders.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+5: Тут проблема с совместимостью заказчика и заказа!!!!
+6: </tr>
+7:   <%}%>
+
+    app/views/buhgalter/orders.erb:4
+    app/views/buhgalter/orders.erb:1:in `each'
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 17:50:23) [GET]
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+
+ActionView::TemplateError (undefined method `clients' for #<Array:0x62763ec>) on line #1 of app/views/buhgalter/orders.erb:
+1: <% @allorders.clients.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (161.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 17:52:02) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+
+ActionView::TemplateError (undefined method `orders' for #<Array:0x6476b74>) on line #1 of app/views/buhgalter/orders.erb:
+1: <% @allclients.orders.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 22:13:28) [GET]
+  [4;36;1mClient Load (94.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mClient Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+
+ActionView::TemplateError (undefined method `orders' for #<Array:0x6504b68>) on line #1 of app/views/buhgalter/orders.erb:
+1: <% @allclients.orders.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (31.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 22:14:14) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mClient Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+
+ActionView::TemplateError (undefined method `order' for #<Array:0x66b9ff8>) on line #1 of app/views/buhgalter/orders.erb:
+1: <% @allclients.order.each{|u| %>
+2:   <tr>
+3: <td><%=u.asum%></td>
+4: <td><%=u.cl_fio%></td>
+
+    app/views/buhgalter/orders.erb:1
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-07 22:17:01) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Load (31.0ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mClient Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 219ms (View: 172, DB: 31) | 200 OK [http://localhost/buhgalter/orders]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 20:29:02) [GET]
+  [4;35;1mClient Load (31.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 172ms (View: 125, DB: 31) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:29:23) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (15.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 78ms (View: 47, DB: 15) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:38:02) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mOrder Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mClient Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 78ms (View: 47, DB: 16) | 200 OK [http://localhost/buhgalter/orders]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:38:37) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:39:16) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mOrder Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mClient Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/buhgalter/orders]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 20:39:19) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-08 20:39:21) [GET]
+  [4;35;1mProvider Load (93.0ms)[0m   [0mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+Completed in 203ms (View: 16, DB: 93) | 200 OK [http://localhost/buhgalter/providers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-08 20:39:26) [GET]
+  [4;36;1mProvider Load (15.0ms)[0m   [0;1mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/buhgalter/providers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 20:39:27) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 20:41:40) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:41:42) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 63ms (View: 32, DB: 15) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 20:41:45) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-08 20:41:46) [GET]
+  [4;36;1mProvider Load (0.0ms)[0m   [0;1mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/buhgalter/providers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:41:50) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 140ms (View: 125, DB: 0) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:44:33) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Load (1.0ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mOrder Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 56ms (View: 34, DB: 8) | 200 OK [http://localhost/buhgalter/orders]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-08 20:44:35) [GET]
+  [4;35;1mProvider Load (1.0ms)[0m   [0mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+  [4;36;1mProvider Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+Completed in 31ms (View: 13, DB: 6) | 200 OK [http://localhost/buhgalter/providers]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 20:44:41) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 56ms (View: 33, DB: 12) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateProviders (20100506202619)
+Migrating to CreateOrders (20100507133407)
+Migrating to CreatePurchases (20100508164937)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateProviders (20100506202619)
+Migrating to CreateOrders (20100507133407)
+Migrating to CreatePurchases (20100508164937)
+  [4;36;1mSQL (112.0ms)[0m   [0;1mCREATE TABLE `purchases` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `z_no` varchar(255), `datain` date, `asum` decimal(9,2), `datadone` date, `provider_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100508164937')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `providers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `purchases`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `purchases`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `purchases`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchase (for 127.0.0.1 at 2010-05-08 21:01:26) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/purchase
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM `purchases` [0m
+  [4;35;1mPurchase Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `purchases`[0m
+  [4;36;1mProvider Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mProvider Load (1.0ms)[0m   [0mSELECT * FROM `providers` WHERE (`providers`.`id` = 1) [0m
+Completed in 70ms (View: 58, DB: 10) | 200 OK [http://localhost/buhgalter/purchase]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchase (for 127.0.0.1 at 2010-05-08 21:02:35) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/purchase
+  [4;36;1mPurchase Load (1.0ms)[0m   [0;1mSELECT * FROM `purchases` [0m
+  [4;35;1mPurchase Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `purchases`[0m
+  [4;36;1mProvider Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mProvider Load (0.0ms)[0m   [0mSELECT * FROM `providers` WHERE (`providers`.`id` = 1) [0m
+Completed in 69ms (View: 58, DB: 8) | 200 OK [http://localhost/buhgalter/purchase]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchases (for 127.0.0.1 at 2010-05-08 21:02:39) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM `purchases` [0m
+
+ActionView::MissingTemplate (Missing template buhgalter/purchases.erb in view path app/views):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchase (for 127.0.0.1 at 2010-05-08 21:03:08) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/purchase
+  [4;35;1mPurchase Load (1.0ms)[0m   [0mSELECT * FROM `purchases` [0m
+  [4;36;1mPurchase Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `purchases`[0m
+  [4;35;1mProvider Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mProvider Load (1.0ms)[0m   [0;1mSELECT * FROM `providers` WHERE (`providers`.`id` = 1) [0m
+Completed in 71ms (View: 58, DB: 11) | 200 OK [http://localhost/buhgalter/purchase]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchase (for 127.0.0.1 at 2010-05-08 21:03:11) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/purchase
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM `purchases` [0m
+  [4;36;1mPurchase Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `purchases`[0m
+  [4;35;1mProvider Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mProvider Load (1.0ms)[0m   [0;1mSELECT * FROM `providers` WHERE (`providers`.`id` = 1) [0m
+Completed in 57ms (View: 45, DB: 9) | 200 OK [http://localhost/buhgalter/purchase]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-08 21:03:13) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mOrder Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mClient Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 57ms (View: 35, DB: 9) | 200 OK [http://localhost/buhgalter/orders]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchase (for 127.0.0.1 at 2010-05-08 21:03:15) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/purchase
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM `purchases` [0m
+  [4;35;1mPurchase Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `purchases`[0m
+  [4;36;1mProvider Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mProvider Load (1.0ms)[0m   [0mSELECT * FROM `providers` WHERE (`providers`.`id` = 1) [0m
+Completed in 56ms (View: 43, DB: 11) | 200 OK [http://localhost/buhgalter/purchase]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-08 21:03:16) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 32ms (View: 14, DB: 5) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-08 21:03:18) [GET]
+  [4;36;1mProvider Load (1.0ms)[0m   [0;1mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+  [4;35;1mProvider Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+Completed in 33ms (View: 14, DB: 5) | 200 OK [http://localhost/buhgalter/providers]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#director (for 127.0.0.1 at 2010-05-11 12:23:54) [GET]
+Rendering template within layouts/director
+Rendering director/director
+Completed in 39ms (View: 36, DB: 0) | 200 OK [http://localhost/director/director]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateProviders (20100506202619)
+Migrating to CreateOrders (20100507133407)
+Migrating to CreatePurchases (20100508164937)
+Migrating to CreateCatalogs (20100511082540)
+  [4;36;1mSQL (104.0ms)[0m   [0;1mCREATE TABLE `catalogs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `art` varchar(255), `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100511082540')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `catalogs`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `catalogs`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `clients`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `clients`[0m
+  [4;35;1mSQL (19.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `orders`[0m
+  [4;36;1mSQL (23.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mSHOW FIELDS FROM `purchases`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `purchases`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `purchases`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateProviders (20100506202619)
+Migrating to CreateOrders (20100507133407)
+Migrating to CreatePurchases (20100508164937)
+Migrating to CreateCatalogs (20100511082540)
+Migrating to CreateDescriptions (20100511083934)
+  [4;36;1mSQL (104.0ms)[0m   [0;1mCREATE TABLE `descriptions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `catalod_id` int(11), `dlina` decimal(3,2), `color` varchar(255), `shin` int(11), `cost` decimal(7,2), `fulart` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100511083934')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `catalogs`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `catalogs`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `clients`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `clients`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `descriptions`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `descriptions`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `providers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `providers`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `purchases`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `purchases`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `purchases`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:26:46) [GET]
+  [4;36;1mCatalog Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 3666ms (View: 3557, DB: 15) | 200 OK [http://localhost/director/newcatalog]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:27:00) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"wee", "art"=>"кап"}}
+  [4;35;1mCatalog Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 78ms (View: 15, DB: 0) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#newcatalog (for 127.0.0.1 at 2010-05-11 17:31:52) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"wee", "art"=>"кап"}}
+
+SyntaxError (C:/projects/inkard2/app/controllers/director_controller.rb:7: syntax error, unexpected '[', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+    @catalog= Catalog.new(params:[:catalog])
+                                  ^
+C:/projects/inkard2/app/controllers/director_controller.rb:15: syntax error, unexpected $end, expecting kEND):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (162.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#newcatalog (for 127.0.0.1 at 2010-05-11 17:32:07) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"wee", "art"=>"кап"}}
+
+SyntaxError (C:/projects/inkard2/app/controllers/director_controller.rb:15: syntax error, unexpected $end, expecting kEND):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#newcatalog (for 127.0.0.1 at 2010-05-11 17:32:11) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"wee", "art"=>"кап"}}
+
+SyntaxError (C:/projects/inkard2/app/controllers/director_controller.rb:15: syntax error, unexpected $end, expecting kEND):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:32:39) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"wee", "art"=>"кап"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCatalog Create (11.0ms)[0m   [0;1mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES('wee', '2010-05-11 13:32:39', 'кап', '2010-05-11 13:32:39')[0m
+  [4;35;1mSQL (70.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 118ms (View: 10, DB: 86) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:32:41) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"wee", "art"=>"кап"}}
+  [4;36;1mCatalog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCatalog Create (1.0ms)[0m   [0;1mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES('wee', '2010-05-11 13:32:41', 'кап', '2010-05-11 13:32:41')[0m
+  [4;35;1mSQL (55.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 83ms (View: 7, DB: 59) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:32:56) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"wee", "art"=>"кап"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCatalog Create (0.0ms)[0m   [0;1mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES('wee', '2010-05-11 13:32:56', 'кап', '2010-05-11 13:32:56')[0m
+  [4;35;1mSQL (74.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 109ms (View: 9, DB: 80) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:33:26) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 46ms (View: 22, DB: 4) | 200 OK [http://localhost/director/newcatalog]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:33:33) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 44ms (View: 20, DB: 5) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:35:37) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 44ms (View: 20, DB: 3) | 200 OK [http://localhost/director/newcatalog]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:35:41) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;35;1mCatalog Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 45ms (View: 21, DB: 4) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:35:42) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 44ms (View: 21, DB: 4) | 200 OK [http://localhost/director/newcatalog]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:36:29) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;35;1mCatalog Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+ERROR: compiling _run_erb_app47views47director47newcatalog46erb RAISED compile error
+C:/projects/inkard2/app/views/director/newcatalog.erb:18: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...mit_tag ,'Сохранить').to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47director47newcatalog46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  form_for :catalog do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat " name:<br />\n"
+@output_buffer.concat " "; @output_buffer.concat(( f.text_field :name ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat " art:<br />\n"
+@output_buffer.concat " "; @output_buffer.concat(( f.text_field :art ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat " "; @output_buffer.concat(( submit_tag ,'Сохранить').to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</p>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/projects/inkard2/app/views/director/newcatalog.erb:24:in `compile!'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/projects/inkard2/app/views/director/newcatalog.erb:18: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...mit_tag ,'Сохранить').to_s); @output_buffer.concat ...
+                              ^) on line #18 of app/views/director/newcatalog.erb:
+15: 
+16: <p>
+17: 
+18:  <%= submit_tag ,'Сохранить'%>
+19: </p>
+20: <% end %>
+
+    app/views/director/newcatalog.erb:24:in `compile!'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (102.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:37:54) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 55ms (View: 31, DB: 5) | 200 OK [http://localhost/director/newcatalog]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 17:39:37) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 56ms (View: 32, DB: 5) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:04:36) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;36;1mCatalog Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `[]' for :catalog:Symbol):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:05:00) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;35;1mCatalog Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `[]' for :catalog:Symbol):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (167.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:05:32) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `[]' for :catalog:Symbol):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:09:48) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `[]' for :catalog:Symbol):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:11:01) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `[]' for :catalog:Symbol):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:15:00) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `description=' for #<Catalog:0x63c09f0>):
+  app/controllers/director_controller.rb:8:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:15:51) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;35;1mCatalog Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `[]' for :catalog:Symbol):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (164.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:16:37) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `[]' for :catalog:Symbol):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:19:37) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"Avi7GQqJCNyJ08mdntOJZwiiw4IJlzi6g9MKbs27DPM=", "catalog"=>{"name"=>"", "art"=>"кап"}}
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `[]' for :catalog:Symbol):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (168.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:38:19) [GET]
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `[]' for :catalog:Symbol):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:39:36) [GET]
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `[]' for :catalog:Symbol):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (165.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:41:53) [GET]
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `[]' for :catalog:Symbol):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-11 18:42:23) [GET]
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (87.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 12:44:51) [GET]
+  [4;36;1mCatalog Columns (46.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 12:46:24) [GET]
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 12:46:28) [GET]
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/director_controller.rb:11:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 12:47:15) [GET]
+  [4;36;1mCatalog Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+
+ActionView::TemplateError (undefined method `dlina' for #<Catalog:0x62da6bc>) on line #20 of app/views/director/newcatalog.erb:
+17: 
+18: <p>
+19:  Длина:<br />
+20:  <%= f.text_field :dlina %>
+21: 
+22: 
+23: </p>
+
+    app/views/director/newcatalog.erb:20
+    app/views/director/newcatalog.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 12:49:04) [GET]
+Rendering template within layouts/director
+Rendering director/newcatalog
+
+ActionView::TemplateError (undefined method `submit_tag' for #<ActionView::Helpers::FormBuilder:0x632a4b4>) on line #46 of app/views/director/newcatalog.erb:
+43: </p>
+44: <p>
+45: 
+46:  <%= f.submit_tag "Добавить " %>
+47: </p>
+48: <% end %>
+
+    app/views/director/newcatalog.erb:46
+    app/views/director/newcatalog.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 12:49:22) [GET]
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 12:50:12) [GET]
+  [4;36;1mCatalog Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+
+ActionView::TemplateError (undefined method `dlina' for #<Catalog:0x63bbea0>) on line #20 of app/views/director/newcatalog.erb:
+17: 
+18: <p>
+19:  Длина:<br />
+20:  <%= f.text_field :dlina %>
+21: 
+22: 
+23: </p>
+
+    app/views/director/newcatalog.erb:20
+    app/views/director/newcatalog.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 12:50:39) [GET]
+  [4;36;1mCatalog Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 63ms (View: 16, DB: 31) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 13:37:47) [GET]
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+
+ActionView::TemplateError (undefined method `dlina' for #<Catalog:0x63be5ec>) on line #20 of app/views/director/newcatalog.erb:
+17: 
+18: <p>
+19:  Длина:<br />
+20:  <%= f.text_field :dlina %>
+21: 
+22: 
+23: </p>
+
+    app/views/director/newcatalog.erb:20
+    app/views/director/newcatalog.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 13:38:46) [GET]
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 13:39:23) [POST]
+  Parameters: {"commit"=>"Добавить ", "authenticity_token"=>"w13a+UNBg6A680LIvzu2bXISs59OARWQhj7Z5YlcazU=", "catalog11"=>{"name"=>"jgfgf", "cost"=>"124.5", "art"=>"fdhjfh", "shin"=>"1", "color"=>"cdfkj", "dlina"=>"1.2"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `fullart=' for #<Description:0x63771c4>):
+  app/controllers/director_controller.rb:17:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 13:42:23) [GET]
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 141ms (View: 109, DB: 16) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 13:42:30) [POST]
+  Parameters: {"commit"=>"Добавить ", "authenticity_token"=>"w13a+UNBg6A680LIvzu2bXISs59OARWQhj7Z5YlcazU=", "catalog11"=>{"name"=>"jgfgf", "fullart"=>"34fd", "cost"=>"124.5", "art"=>"fdhjfh", "shin"=>"1", "color"=>"cdfkj", "dlina"=>"1.2"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `fullart=' for #<Description:0x6517ba0>):
+  app/controllers/director_controller.rb:17:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 13:46:06) [POST]
+  Parameters: {"commit"=>"Добавить ", "authenticity_token"=>"w13a+UNBg6A680LIvzu2bXISs59OARWQhj7Z5YlcazU=", "catalog11"=>{"name"=>"jgfgf", "fullart"=>"34fd", "cost"=>"124.5", "art"=>"fdhjfh", "shin"=>"1", "color"=>"cdfkj", "dlina"=>"1.2"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (0.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES('jgfgf', '2010-05-12 09:46:06', 'fdhjfh', '2010-05-12 09:46:06')[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+
+NoMethodError (undefined method `dlina' for #<Class:0x62d1648>):
+  app/models/description.rb:6:in `validate'
+  app/controllers/director_controller.rb:21:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (188.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 13:49:00) [POST]
+  Parameters: {"commit"=>"Добавить ", "authenticity_token"=>"w13a+UNBg6A680LIvzu2bXISs59OARWQhj7Z5YlcazU=", "catalog11"=>{"name"=>"jgfgf", "fullart"=>"34fd", "cost"=>"124.5", "art"=>"fdhjfh", "shin"=>"1", "color"=>"cdfkj", "dlina"=>"1.2"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `description' for #<Catalog:0x64e0f24>):
+  app/controllers/director_controller.rb:13:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 13:49:28) [POST]
+  Parameters: {"commit"=>"Добавить ", "authenticity_token"=>"w13a+UNBg6A680LIvzu2bXISs59OARWQhj7Z5YlcazU=", "catalog11"=>{"name"=>"jgfgf", "fullart"=>"34fd", "cost"=>"124.5", "art"=>"fdhjfh", "shin"=>"1", "color"=>"cdfkj", "dlina"=>"1.2"}}
+  [4;35;1mCatalog Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `descriptions' for #<Catalog:0x628d948>):
+  app/controllers/director_controller.rb:13:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-12 15:25:48) [GET]
+  [4;36;1mClient Load (15.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;35;1mClient Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 140ms (View: 32, DB: 30) | 200 OK [http://localhost/buhgalter/clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#orders (for 127.0.0.1 at 2010-05-12 15:25:52) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/orders
+  [4;35;1mOrder Load (16.0ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mClient Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+Completed in 110ms (View: 94, DB: 16) | 200 OK [http://localhost/buhgalter/orders]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#purchase (for 127.0.0.1 at 2010-05-12 15:25:55) [GET]
+Rendering template within layouts/buhgalter
+Rendering buhgalter/purchase
+  [4;35;1mPurchase Load (16.0ms)[0m   [0mSELECT * FROM `purchases` [0m
+  [4;36;1mPurchase Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `purchases`[0m
+  [4;35;1mProvider Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mProvider Load (0.0ms)[0m   [0;1mSELECT * FROM `providers` WHERE (`providers`.`id` = 1) [0m
+Completed in 109ms (View: 77, DB: 32) | 200 OK [http://localhost/buhgalter/purchase]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#clients (for 127.0.0.1 at 2010-05-12 15:25:57) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/clients
+  [4;36;1mClient Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/buhgalter/clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BuhgalterController#providers (for 127.0.0.1 at 2010-05-12 15:25:59) [GET]
+  [4;35;1mProvider Load (0.0ms)[0m   [0mSELECT * FROM `providers` [0m
+Rendering template within layouts/buhgalter
+Rendering buhgalter/providers
+  [4;36;1mProvider Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/buhgalter/providers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 15:26:22) [GET]
+  [4;35;1mCatalog Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 15:26:47) [POST]
+  Parameters: {"commit"=>"Добавить ", "authenticity_token"=>"w13a+UNBg6A680LIvzu2bXISs59OARWQhj7Z5YlcazU=", "catalog11"=>{"name"=>"gthdf", "cost"=>"123", "art"=>"gdgdfs", "shin"=>"1", "color"=>"ccv", "dlina"=>"1.2", "fulart"=>"ryutiugyf"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `descriptions' for #<Catalog:0x76fe3a0>):
+  app/controllers/director_controller.rb:13:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (15.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 15:31:23) [POST]
+  Parameters: {"commit"=>"Добавить ", "authenticity_token"=>"w13a+UNBg6A680LIvzu2bXISs59OARWQhj7Z5YlcazU=", "catalog11"=>{"name"=>"gthdf", "cost"=>"123", "art"=>"gdgdfs", "shin"=>"1", "color"=>"ccv", "dlina"=>"1.2", "fulart"=>"ryutiugyf"}}
+  [4;35;1mCatalog Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `description' for #<Catalog:0x763f540>):
+  app/controllers/director_controller.rb:13:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 15:31:41) [POST]
+  Parameters: {"commit"=>"Добавить ", "authenticity_token"=>"w13a+UNBg6A680LIvzu2bXISs59OARWQhj7Z5YlcazU=", "catalog11"=>{"name"=>"gthdf", "cost"=>"123", "art"=>"gdgdfs", "shin"=>"1", "color"=>"ccv", "dlina"=>"1.2", "fulart"=>"ryutiugyf"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `description' for #<Catalog:0x7581270>):
+  app/controllers/director_controller.rb:13:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:10:46) [GET]
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #23 of app/views/director/newcatalog.erb:
+20: <% end %>
+21: <p>
+22:  Длина:<br />
+23:  <%= text_field :dlina %>
+24: 
+25: 
+26: </p>
+
+    app/views/director/newcatalog.erb:23:in `text_field'
+    app/views/director/newcatalog.erb:23
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:12:14) [GET]
+  [4;35;1mCatalog Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #30 of app/views/director/newcatalog.erb:
+27: 
+28: <p>
+29:  Цвет:<br />
+30:  <%= text_field :color %>
+31: 
+32: 
+33: </p>
+
+    app/views/director/newcatalog.erb:30:in `text_field'
+    app/views/director/newcatalog.erb:30
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:12:54) [GET]
+  [4;36;1mCatalog Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 140ms (View: 125, DB: 15) | 200 OK [http://localhost/director/newcatalog]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:16:33) [GET]
+  [4;35;1mCatalog Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `build_description' for #<Catalog:0x6510814>):
+  app/controllers/director_controller.rb:8:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:24:59) [GET]
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `build_description' for #<Catalog:0x62906d4>):
+  app/controllers/director_controller.rb:8:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (88.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:30:38) [GET]
+  [4;35;1mCatalog Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (118.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 270ms (View: 33, DB: 123) | 200 OK [http://localhost/director/newcatalog]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:39:44) [GET]
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 68ms (View: 33, DB: 8) | 200 OK [http://localhost/director/newcatalog]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:44:03) [GET]
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+
+ActionView::TemplateError (undefined method `to_sym' for #<DirectorController:0x6302a7c>) on line #3 of app/views/director/newcatalog.erb:
+1: Добавление данных в каталог
+2: 
+3:  <%form_for [@catalog], :url => { controller => 'directors',:actions => "newcatalog"}  do |f| %>
+4: 
+5: <p>
+6:  Наименование:<br />
+
+    app/views/director/newcatalog.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (230.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:44:21) [GET]
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+
+ActionView::TemplateError (undefined method `to_sym' for #<DirectorController:0x639cb2c>) on line #3 of app/views/director/newcatalog.erb:
+1: Добавление данных в каталог
+2: 
+3:  <%form_for [@catalog], :url => { controller => 'director',:actions => "newcatalog"}  do |f| %>
+4: 
+5: <p>
+6:  Наименование:<br />
+
+    app/views/director/newcatalog.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (228.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:45:14) [GET]
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 69ms (View: 33, DB: 9) | 200 OK [http://localhost/director/newcatalog]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:53:19) [GET]
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 57ms (View: 22, DB: 10) | 200 OK [http://localhost/director/newcatalog]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-12 22:54:02) [GET]
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 58ms (View: 23, DB: 8) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:10:04) [GET]
+  [4;36;1mCatalog Columns (63.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 2996ms (View: 2855, DB: 79) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:22:08) [GET]
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:22:24) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"/FJQgw50emNy/UN870e/e6/IR2tXdOoy5hy2JkrtKu4=", "description"=>{"cost"=>"2", "shin"=>"2", "color"=>"dvvd", "dlina"=>"1", "fulart"=>"vfvv"}, "catalog"=>{"name"=>"bvgdfb", "art"=>"fgvd"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (0.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES('bvgdfb', '2010-05-14 04:22:24', 'fgvd', '2010-05-14 04:22:24')[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSHOW TABLES[0m
+
+NoMethodError (undefined method `dlina' for #<Class:0x391f2f0>):
+  app/models/description.rb:6:in `validate'
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:22:41) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"/FJQgw50emNy/UN870e/e6/IR2tXdOoy5hy2JkrtKu4=", "description"=>{"cost"=>"2.5", "shin"=>"2", "color"=>"dvvd", "dlina"=>"1.5", "fulart"=>"vfvv"}, "catalog"=>{"name"=>"bvgdfb", "art"=>"fgvd"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (0.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES('bvgdfb', '2010-05-14 04:22:41', 'fgvd', '2010-05-14 04:22:41')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+
+NoMethodError (undefined method `dlina' for #<Class:0x3fe709c>):
+  app/models/description.rb:6:in `validate'
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (219.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:28:09) [GET]
+  [4;36;1mCatalog Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 47ms (View: 16, DB: 31) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:28:27) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"Ka7vq78meNJ/YzBCi/qTricokxLZdRrwmlftws0Pipk=", "description"=>{"cost"=>"11.1", "shin"=>"1", "color"=>"cncjd", "dlina"=>"2.2", "fulart"=>"cfefvfjf"}, "catalog"=>{"name"=>" b ", "art"=>"fbvdf"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (0.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES(' b ', '2010-05-14 04:28:27', 'fbvdf', '2010-05-14 04:28:27')[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+
+NoMethodError (undefined method `dlina' for #<Class:0x6339e00>):
+  app/models/description.rb:6:in `validate'
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (234.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:29:26) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"Ka7vq78meNJ/YzBCi/qTricokxLZdRrwmlftws0Pipk=", "description"=>{"cost"=>"11.1", "shin"=>"1", "color"=>"cncjd", "dlina"=>"2.2", "fulart"=>"cfefvfjf"}, "catalog"=>{"name"=>" b ", "art"=>"fbvdf"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (0.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES(' b ', '2010-05-14 04:29:26', 'fbvdf', '2010-05-14 04:29:26')[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `<=' for :dlina:Symbol):
+  app/models/description.rb:6:in `validate'
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:29:56) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"Ka7vq78meNJ/YzBCi/qTricokxLZdRrwmlftws0Pipk=", "description"=>{"cost"=>"11.1", "shin"=>"1", "color"=>"cncjd", "dlina"=>"2.2", "fulart"=>"cfefvfjf"}, "catalog"=>{"name"=>" b ", "art"=>"fbvdf"}}
+  [4;35;1mCatalog Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCatalog Create (0.0ms)[0m   [0;1mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES(' b ', '2010-05-14 04:29:56', 'fbvdf', '2010-05-14 04:29:56')[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (undefined method `<' for :dlina:Symbol):
+  app/models/description.rb:6:in `validate'
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:30:51) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"Ka7vq78meNJ/YzBCi/qTricokxLZdRrwmlftws0Pipk=", "description"=>{"cost"=>"11.1", "shin"=>"1", "color"=>"cncjd", "dlina"=>"2.2", "fulart"=>"cfefvfjf"}, "catalog"=>{"name"=>" b ", "art"=>"fbvdf"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (0.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES(' b ', '2010-05-14 04:30:51', 'fbvdf', '2010-05-14 04:30:51')[0m
+  [4;36;1mDescription Create (0.0ms)[0m   [0;1mINSERT INTO `descriptions` (`updated_at`, `cost`, `shin`, `color`, `catalod_id`, `dlina`, `fulart`, `created_at`) VALUES('2010-05-14 04:30:51', 11.1, 1, 'cncjd', NULL, 2.2, 'cfefvfjf', '2010-05-14 04:30:51')[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/director/director
+Completed in 125ms (DB: 78) | 302 Found [http://localhost/director/newcatalog?actions=newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#director (for 127.0.0.1 at 2010-05-14 08:30:51) [GET]
+Rendering template within layouts/director
+Rendering director/director
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/director/director]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:31:59) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"Ka7vq78meNJ/YzBCi/qTricokxLZdRrwmlftws0Pipk=", "description"=>{"cost"=>"11.1", "shin"=>"1", "color"=>"cncjd", "dlina"=>"2.2", "fulart"=>"cfefvfjf"}, "catalog"=>{"name"=>" b ", "art"=>"fbvdf"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (0.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES(' b ', '2010-05-14 04:31:59', 'fbvdf', '2010-05-14 04:31:59')[0m
+  [4;36;1mDescription Create (1.0ms)[0m   [0;1mINSERT INTO `descriptions` (`updated_at`, `cost`, `shin`, `color`, `catalod_id`, `dlina`, `fulart`, `created_at`) VALUES('2010-05-14 04:31:59', 11.1, 1, 'cncjd', NULL, 2.2, 'cfefvfjf', '2010-05-14 04:31:59')[0m
+  [4;35;1mSQL (70.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/director/director
+Completed in 122ms (DB: 80) | 302 Found [http://localhost/director/newcatalog?actions=newcatalog]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#director (for 127.0.0.1 at 2010-05-14 08:32:00) [GET]
+Rendering template within layouts/director
+Rendering director/director
+Completed in 8ms (View: 5, DB: 2) | 200 OK [http://localhost/director/director]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:34:33) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"Ka7vq78meNJ/YzBCi/qTricokxLZdRrwmlftws0Pipk=", "description"=>{"cost"=>"11.1", "shin"=>"1", "color"=>"cncjd", "dlina"=>"2.2", "fulart"=>"cfefvfjf"}, "catalog"=>{"name"=>" b ", "art"=>"fbvdf"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `catalog_id=' for #<Description:0x648f534>):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 08:34:56) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"Ka7vq78meNJ/YzBCi/qTricokxLZdRrwmlftws0Pipk=", "description"=>{"cost"=>"11.1", "shin"=>"1", "color"=>"cncjd", "dlina"=>"2.2", "fulart"=>"cfefvfjf"}, "catalog"=>{"name"=>" b ", "art"=>"fbvdf"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (1.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES(' b ', '2010-05-14 04:34:56', 'fbvdf', '2010-05-14 04:34:56')[0m
+  [4;36;1mDescription Create (0.0ms)[0m   [0;1mINSERT INTO `descriptions` (`updated_at`, `cost`, `shin`, `color`, `catalod_id`, `dlina`, `fulart`, `created_at`) VALUES('2010-05-14 04:34:56', 11.1, 1, 'cncjd', NULL, 2.2, 'cfefvfjf', '2010-05-14 04:34:56')[0m
+  [4;35;1mSQL (37.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/director/director
+Completed in 91ms (DB: 47) | 302 Found [http://localhost/director/newcatalog?actions=newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#director (for 127.0.0.1 at 2010-05-14 08:34:56) [GET]
+Rendering template within layouts/director
+Rendering director/director
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/director/director]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCatalog Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 21:58:49) [GET]
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 3167ms (View: 3058, DB: 31) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 21:59:10) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"MIwHcwVr+4jovwgp3w5WBgQKg1VeyaHoTBTQszxy1bM=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"rr", "dlina"=>"1.3", "fulart"=>"rr"}, "catalog"=>{"name"=>"ee", "art"=>"ee"}}
+  [4;36;1mCatalog Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (47.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES('ee', '2010-05-14 17:59:10', 'ee', '2010-05-14 17:59:10')[0m
+  [4;36;1mDescription Create (0.0ms)[0m   [0;1mINSERT INTO `descriptions` (`updated_at`, `cost`, `shin`, `color`, `catalod_id`, `dlina`, `fulart`, `created_at`) VALUES('2010-05-14 17:59:11', 1.1, 1, 'rr', NULL, 1.3, 'rr', '2010-05-14 17:59:11')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/director/director
+Completed in 141ms (DB: 78) | 302 Found [http://localhost/director/newcatalog?actions=newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#director (for 127.0.0.1 at 2010-05-14 21:59:11) [GET]
+Rendering template within layouts/director
+Rendering director/director
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/director/director]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:04:06) [GET]
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 53ms (View: 18, DB: 8) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:04:08) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"MIwHcwVr+4jovwgp3w5WBgQKg1VeyaHoTBTQszxy1bM=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"rr", "dlina"=>"1.3", "fulart"=>"rr"}, "catalog"=>{"name"=>"ee", "art"=>"ee"}}
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `create' for nil:NilClass):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (90.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:05:48) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"MIwHcwVr+4jovwgp3w5WBgQKg1VeyaHoTBTQszxy1bM=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"rr", "dlina"=>"1.3", "fulart"=>"rr"}, "catalog"=>{"name"=>"ee", "art"=>"ee"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `new' for nil:NilClass):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (177.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:05:54) [GET]
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 52ms (View: 18, DB: 9) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:06:09) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"MIwHcwVr+4jovwgp3w5WBgQKg1VeyaHoTBTQszxy1bM=", "description"=>{"cost"=>"ttt", "shin"=>"2", "color"=>"gg", "dlina"=>"2.2", "fulart"=>"ttt"}, "catalog"=>{"name"=>"hh", "art"=>"hh"}}
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `new' for nil:NilClass):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:08:02) [GET]
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 34ms (View: 15, DB: 3) | 200 OK [http://localhost/director/newcatalog]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:08:04) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"MIwHcwVr+4jovwgp3w5WBgQKg1VeyaHoTBTQszxy1bM=", "description"=>{"cost"=>"ttt", "shin"=>"2", "color"=>"gg", "dlina"=>"2.2", "fulart"=>"ttt"}, "catalog"=>{"name"=>"hh", "art"=>"hh"}}
+  [4;35;1mCatalog Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+
+NoMethodError (undefined method `new' for nil:NilClass):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (168.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:21:08) [GET]
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+Rendering template within layouts/director
+Rendering director/newcatalog
+Completed in 51ms (View: 19, DB: 7) | 200 OK [http://localhost/director/newcatalog]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:21:24) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"YwRMg2IgwJXHUO0UREQV0QrK7t/jbGvSqWVs6C3e410=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"vfv", "dlina"=>"1.2", "fulart"=>"freff"}, "catalog"=>{"name"=>"gg", "art"=>"fgf1"}}
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+
+NoMethodError (private method `find_last' called for #<Class:0x62d69e0>):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:23:43) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"YwRMg2IgwJXHUO0UREQV0QrK7t/jbGvSqWVs6C3e410=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"vfv", "dlina"=>"1.2", "fulart"=>"freff"}, "catalog"=>{"name"=>"gg", "art"=>"fgf1"}}
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+
+NameError (undefined local variable or method `created_at' for #<DirectorController:0x65e675c>):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:26:53) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"YwRMg2IgwJXHUO0UREQV0QrK7t/jbGvSqWVs6C3e410=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"vfv", "dlina"=>"1.2", "fulart"=>"freff"}, "catalog"=>{"name"=>"gg", "art"=>"fgf1"}}
+  [4;35;1mCatalog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
+  [4;36;1mDescription Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+  [4;35;1mCatalog Load (1.0ms)[0m   [0mSELECT * FROM `catalogs` WHERE (`catalogs`.`created_at` IS NULL) ORDER BY catalogs.id DESC LIMIT 1[0m
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/director_controller.rb:15:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:28:26) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"YwRMg2IgwJXHUO0UREQV0QrK7t/jbGvSqWVs6C3e410=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"vfv", "dlina"=>"1.2", "fulart"=>"freff"}, "catalog"=>{"name"=>"gg", "art"=>"fgf1"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `new' for nil:NilClass):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:29:24) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"YwRMg2IgwJXHUO0UREQV0QrK7t/jbGvSqWVs6C3e410=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"vfv", "dlina"=>"1.2", "fulart"=>"freff"}, "catalog"=>{"name"=>"gg", "art"=>"fgf1"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `create' for nil:NilClass):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:30:18) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"YwRMg2IgwJXHUO0UREQV0QrK7t/jbGvSqWVs6C3e410=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"vfv", "dlina"=>"1.2", "fulart"=>"freff"}, "catalog"=>{"name"=>"gg", "art"=>"fgf1"}}
+  [4;36;1mCatalog Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `new' for nil:NilClass):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:30:33) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"YwRMg2IgwJXHUO0UREQV0QrK7t/jbGvSqWVs6C3e410=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"vfv", "dlina"=>"1.2", "fulart"=>"freff"}, "catalog"=>{"name"=>"gg", "art"=>"fgf1"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (undefined method `new' for nil:NilClass):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (88.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:35:04) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"YwRMg2IgwJXHUO0UREQV0QrK7t/jbGvSqWVs6C3e410=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"vfv", "dlina"=>"1.2", "fulart"=>"freff"}, "catalog"=>{"name"=>"gg", "art"=>"fgf1"}}
+  [4;36;1mCatalog Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/director_controller.rb:14:in `newcatalog'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (166.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:35:50) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"YwRMg2IgwJXHUO0UREQV0QrK7t/jbGvSqWVs6C3e410=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"vfv", "dlina"=>"1.2", "fulart"=>"freff"}, "catalog"=>{"name"=>"gg", "art"=>"fgf1"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (0.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES('gg', '2010-05-14 18:35:50', 'fgf1', '2010-05-14 18:35:50')[0m
+  [4;36;1mDescription Create (0.0ms)[0m   [0;1mINSERT INTO `descriptions` (`updated_at`, `cost`, `shin`, `color`, `catalod_id`, `dlina`, `fulart`, `created_at`) VALUES('2010-05-14 18:35:50', 1.1, 1, 'vfv', NULL, 1.2, 'freff', '2010-05-14 18:35:50')[0m
+  [4;35;1mSQL (74.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/director/director
+Completed in 128ms (DB: 83) | 302 Found [http://localhost/director/newcatalog?actions=newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#director (for 127.0.0.1 at 2010-05-14 22:35:50) [GET]
+Rendering template within layouts/director
+Rendering director/director
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/director/director]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:36:08) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"YwRMg2IgwJXHUO0UREQV0QrK7t/jbGvSqWVs6C3e410=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"vfv", "dlina"=>"1.2", "fulart"=>"freff"}, "catalog"=>{"name"=>"gg", "art"=>"fgf1"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (2.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES('gg', '2010-05-14 18:36:08', 'fgf1', '2010-05-14 18:36:08')[0m
+  [4;36;1mDescription Create (0.0ms)[0m   [0;1mINSERT INTO `descriptions` (`updated_at`, `cost`, `shin`, `color`, `catalod_id`, `dlina`, `fulart`, `created_at`) VALUES('2010-05-14 18:36:08', 1.1, 1, 'vfv', NULL, 1.2, 'freff', '2010-05-14 18:36:08')[0m
+  [4;35;1mSQL (111.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/director/director
+Completed in 167ms (DB: 121) | 302 Found [http://localhost/director/newcatalog?actions=newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#director (for 127.0.0.1 at 2010-05-14 22:36:09) [GET]
+Rendering template within layouts/director
+Rendering director/director
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/director/director]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateProviders (20100506202619)
+Migrating to CreateOrders (20100507133407)
+Migrating to CreatePurchases (20100508164937)
+Migrating to CreateCatalogs (20100511082540)
+Migrating to CreateDescriptions (20100511083934)
+Migrating to AddCatalodidToDescription (20100514184752)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'inkard2.users' doesn't exist: ALTER TABLE `users` ADD `gender` varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100506190918)
+Migrating to CreateProviders (20100506202619)
+Migrating to CreateOrders (20100507133407)
+Migrating to CreatePurchases (20100508164937)
+Migrating to CreateCatalogs (20100511082540)
+Migrating to CreateDescriptions (20100511083934)
+Migrating to AddCatalodidToDescription (20100514184752)
+  [4;36;1mSQL (462.0ms)[0m   [0;1mALTER TABLE `descriptions` ADD `catalog_id` int(11)[0m
+  [4;35;1mSQL (255.0ms)[0m   [0mALTER TABLE `descriptions` DROP `catalod_id`[0m
+  [4;36;1mSQL (43.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100514184752')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `catalogs`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `catalogs`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `descriptions`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `descriptions`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `orders`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `orders`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `purchases`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `purchases`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `purchases`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#newcatalog (for 127.0.0.1 at 2010-05-14 22:54:48) [POST]
+  Parameters: {"actions"=>"newcatalog", "commit"=>"Добавить ", "authenticity_token"=>"YwRMg2IgwJXHUO0UREQV0QrK7t/jbGvSqWVs6C3e410=", "description"=>{"cost"=>"1.1", "shin"=>"1", "color"=>"vfv", "dlina"=>"1.2", "fulart"=>"freff"}, "catalog"=>{"name"=>"gg", "art"=>"fgf1"}}
+  [4;36;1mCatalog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mDescription Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCatalog Create (0.0ms)[0m   [0mINSERT INTO `catalogs` (`name`, `updated_at`, `art`, `created_at`) VALUES('gg', '2010-05-14 18:54:48', 'fgf1', '2010-05-14 18:54:48')[0m
+  [4;36;1mDescription Create (1.0ms)[0m   [0;1mINSERT INTO `descriptions` (`updated_at`, `catalog_id`, `cost`, `shin`, `color`, `dlina`, `fulart`, `created_at`) VALUES('2010-05-14 18:54:48', 16, 1.1, 1, 'vfv', 1.2, 'freff', '2010-05-14 18:54:48')[0m
+  [4;35;1mSQL (75.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/director/director
+Completed in 130ms (DB: 84) | 302 Found [http://localhost/director/newcatalog?actions=newcatalog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DirectorController#director (for 127.0.0.1 at 2010-05-14 22:54:50) [GET]
+Rendering template within layouts/director
+Rendering director/director
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/director/director]
+
+  [4;36;1mSQL (413.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (624.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (516.8ms)[0m   [0mSELECT version FROM schema_migrations[0m

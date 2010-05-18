@@ -1,3 +1,4 @@
+
 # To change this template, choose Tools | Templates
 # and open the template in the editor.
 
@@ -17,3 +18,4 @@ class Description < ActiveRecord::Base
     end
   end
 end
+

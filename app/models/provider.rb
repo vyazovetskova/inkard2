@@ -1,3 +1,4 @@
+
 # To change this template, choose Tools | Templates
 # and open the template in the editor.
 
@@ -7,4 +8,5 @@ class Provider < ActiveRecord::Base
 #тут добавляйте ограничения
   has_many :purchase
   has_many :partspurchase
+
 end

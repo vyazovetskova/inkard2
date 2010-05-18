@@ -1,3 +1,4 @@
+
 # To change this template, choose Tools | Templates
 # and open the template in the editor.
 
@@ -11,4 +12,5 @@ class Purchase < ActiveRecord::Base #закупки
       errors.add( "Данные введены не верно!")
     end
   end
+
 end

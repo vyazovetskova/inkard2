@@ -8,4 +8,3 @@ class AddCatalodidToDescription < ActiveRecord::Migration
    raise ActiveRecord::IrreversibleMigration
   end
 end
-
