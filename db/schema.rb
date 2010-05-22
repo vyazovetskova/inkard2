@@ -9,7 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100514184752) do
+ActiveRecord::Schema.define(:version => 20100519050423) do
+
+  create_table "autorizations", :force => true do |t|
+    t.string   "login"
+    t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "catalogs", :force => true do |t|
     t.string   "art"
@@ -55,23 +62,6 @@ ActiveRecord::Schema.define(:version => 20100514184752) do
     t.datetime "updated_at"
   end
 
-
-  create_table "parts_providers", :force => true do |t|
-    t.string   "art"
-    t.decimal  "cost",        :precision => 7, :scale => 2
-    t.integer  "provider_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "parts_purchases", :force => true do |t|
-    t.string   "art"
-    t.integer  "purchase_id"
-    t.integer  "kol"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "providers", :force => true do |t|
     t.string   "p_org"
     t.string   "p_fio"
@@ -94,16 +84,6 @@ ActiveRecord::Schema.define(:version => 20100514184752) do
     t.decimal  "asum",        :precision => 9, :scale => 2
     t.date     "datadone"
     t.integer  "provider_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "readies", :force => true do |t|
-    t.integer  "kol"
-    t.integer  "sost"
-    t.integer  "brak"
-    t.integer  "order_id"
-    t.integer  "description_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

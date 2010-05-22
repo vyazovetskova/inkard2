@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>рабочее место:Директор</title>
+        <%= stylesheet_link_tag 'forall' %>
+
+  </head>
+
+
+
+
+<body>
+  <div class="mainmenu">
+  Рабочее мето : Директор
+   <ul>
+     <li class="zagolovok">Работа с каталогом</li>
+     <ul>
+        <li><%= link_to "Добавить данные" , :action =>"newcatalog"%> </li>
+         <li><%= link_to  "Внести изменения", :action =>"catalogupdate"%> </li>
+         <li><%= link_to "Просмотреть каталог" , :action =>"cataloglook"%> </li>
+         <li><%= link_to "Удалить данные" , :action =>"catalogdel"%></li>
+
+        </ul>
+
+
+     <li class="zagolovok"> Информация о заказах</li>
+
+
+
+
+   </ul>
+  </div>
+  <div class="right"><%= yield :layout %>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,69 @@
+<% form_for :update_type do |s| %>
+        <%= s.radio_button("type", "all", :checked => true ) %>Выбрать для редактирования весь каталог<br>
+        <%= s.radio_button("type", "condit") %>Выбрать для редактирования по условиям:<br/><br/>
+
+        <p>Артикул:<br>
+        <%= text_field :upd, :art  %>
+        </p>
+        <p>Наименование:<br>
+        <%= text_field :upd, :name  %>
+        </p>
+        <p>Длина:<br>
+       от: <%= text_field :upd, :dlinamin  %> до:<%= text_field :upd, :dlinamax  %>
+        </p>
+        <p>Цена:<br>
+       от: <%= text_field :upd, :costmin  %> до:<%= text_field :upd, :costmax  %>
+        </p>
+        <p>Цвет:<br>
+       <%= text_field :upd, :color %>
+        </p>
+        <p>
+ Шина:<br />
+  <%= s.radio_button("shin", "all", :checked => true ) %>Не важно
+        <%= s.radio_button("shin", "yes") %>Есть
+        <%= s.radio_button("shin", "no") %>Нет<br/>
+
+
+</p>
+        <%= submit_tag "Искать" %>
+
+
+
+
+      <% end %>
+
+<%= @conditions %>
+
+<table border="1" cellspacing="0" cellpadding="4">
+
+  <br>
+<tr>
+<td>Наименование</td>
+<td>Артикул</td>
+<td>Длина</td>
+<td>Цвет</td>
+<td>Шина</td>
+<td>Цена,руб</td>
+
+
+
+</tr>
+
+
+<% @catalog.each{|u| %>
+  <tr>
+<td><%=u.catalog.name%></td>
+<td><%=u.catalog.art%></td>
+<td><%=u.dlina%></td>
+<td><%=u.color%></td>
+<td><%=u.shin%></td>
+<td><%=u.cost%></td>
+
+
+</tr>
+  <%}%>
+
+</table>
+
+
+

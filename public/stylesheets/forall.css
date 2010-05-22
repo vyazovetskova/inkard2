@@ -1,13 +1,7 @@
 /* 
-<<<<<<< HEAD
-    Document   : forall
-    Created on : 10.05.2010, 22:11:26
-    Author     : dmitry
-=======
     Document   : director
     Created on : 20.04.2010, 21:17:17
     Author     : Alena
->>>>>>> 562dc8a60f8cac891902197ebf03aa33178099cf
     Description:
         Purpose of the stylesheet follows.
 */
@@ -16,12 +10,16 @@
    TODO customize this sample style
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
-
-root {
+.formError{color: red;}
+.fieldWithErrors {border: 1px solid red;
+                 display: table-cell;
+}
+root { 
     display: block;
 }
 
 .zagolovok {
+    
     font-size: 150%;
     text-decoration:underline;
 
@@ -29,11 +27,9 @@ root {
 .mainmenu{font-family: "Arial";
 font-size: 120%;
 float: left;
-
-	width: 400px;
+	width: 350px;
         border-right: 3px solid black;
 }
-
 
 .right { padding-left: 370px;
 	
@@ -43,4 +39,10 @@ li{
  list-style-type: none;}
 
 a {color: black;
-}
+text-decoration: none}
+
+.zagmin {font-size: 120%;
+font-family: Arial;}
+
+.zagatpage {font-size: 150%;
+font-family: Arial;}

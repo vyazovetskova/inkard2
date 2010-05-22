@@ -1,0 +1,60 @@
+<p class="zagatpage">Добавление данных в каталог </p>
+
+
+  <% unless flash[:notice].blank? %>
+<div><%= flash[:notice] %></div>
+<% end %>
+
+
+<%form_for [@catalog], :url => { :actions => "newcatalog"}  do |f| %>
+
+
+<p class="zagmin">
+ Наименование:<br />
+ <%= f.text_field :name %>
+ <%= error_message_on 'catalog', 'name'  %>
+
+</p>
+
+<p class="zagmin">
+ Артикул:<br />
+ <%= f.text_field :art %>
+ <%= error_message_on 'catalog', 'art'  %>
+
+
+</p>
+
+
+
+<p class="zagmin">
+ Длина карниза:<br />
+ <%= text_field :description, :dlina %>
+ <%= error_message_on 'description', 'dlina'  %>
+
+</p>
+
+<p class="zagmin">
+ Шина:<br />
+ <%= check_box :description, :shin %>есть
+
+
+</p>
+<p class="zagmin">
+ Цвет:<br />
+ <%= text_field :description, :color %>
+<%= error_message_on 'description', 'color'  %>
+
+</p>
+
+
+<p class="zagmin">
+ Цена,руб.:<br />
+ <%= text_field :description, :cost %>
+<%= error_message_on 'description', 'cost'  %>
+
+</p>
+
+<p>
+ <%= submit_tag "Добавить " %>
+</p>
+<% end %>
