@@ -49,7 +49,7 @@
 </tr>
 
 
-
+<% form_for :del do %>
 <% @catalog.each{|u| %>
   <tr>
 <td><%=u.catalog.name%></td>
@@ -58,17 +58,19 @@
 <td><%=u.color%></td>
 <td><%=u.shin%></td>
 <td><%=u.cost%></td>
-<td><%= check_box_tag :u,:del%>Удалить</td>
-<% submit_tag 'Удалить' %>
+<td><%= check_box :del, u.id %>Удалить</td>
+
 
 </tr>
   <%}%>
 
 
 </table>
+<%= submit_tag 'Удалить' %>
+<% end %>
 <br/>
 
-<%= link_to "Удалить" , :action =>"destroy"%>
+<!--####<%= link_to "Удалить" , :action =>"destroy"%>-->
 
  
 
