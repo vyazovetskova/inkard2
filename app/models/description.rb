@@ -1,14 +1,9 @@
-
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-
 class Description < ActiveRecord::Base
-  #cost>0
   belongs_to :catalog
-  has_many :ready
 
   validates_presence_of :dlina, :color, :shin, :cost, :message =>"Поле не может быть пустым!"
   validates_length_of :color, :within => 1..15, :message =>"Данные введены неверно!"
+
 
 
   validates_numericality_of :dlina, :message =>"Поле должно быть числовым!"
@@ -23,6 +18,27 @@ class Description < ActiveRecord::Base
       if self.cost<= 0.0
       errors.add("Данные введены не верно!")
     end
+
+
+private
+  
+def make_art
+
+     a=self.color
+     b=self.dlina
+     c=self.shin
+     e=self.catalog.art
+     d=e+a+b.to_s+'/'+c.to_s
+    self.fulart =d
+
+
   end
+#
+#def checkit
+#  if self.cost <= 0 || self.cost > 99999
+#    errors.add(:cost, "Something's wrong!")
+#  end
+#end
+ 
 end
 

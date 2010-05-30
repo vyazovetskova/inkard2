@@ -1,8 +1,11 @@
+
 .formError{color: red;}
 .fieldWithErrors {border: 1px solid red;
                  display: table-cell;
 }
+
 root {
+
     display: block;
 }
 
@@ -16,7 +19,7 @@ root {
 font-size: 120%;
 float: left;
 width: 350px;
-        border-right: 3px solid black;
+border-right: 3px solid black;
 }
 
 .right { padding-left: 370px;
@@ -33,5 +36,6 @@ text-decoration: none}
 font-family: Arial;}
 
 .zagatpage {font-size: 150%;
+
 font-family: Arial;}
 

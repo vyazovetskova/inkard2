@@ -7,13 +7,11 @@ def newcatalog
   @catalog = Catalog.new(params[:catalog])
 
 
-
   @description = Description.new(params[:description])
 
   #@description= Catalog.Description.new
   if request.post?
    # params[:description][:cost].gsub!(/,/, '.')
-
 
 
   if @catalog.save
@@ -45,7 +43,6 @@ def catalogupdate
     if request.post?
       if params[:update_type][:type]=='all' then
         @catalog= Description.all
-
 
 
       else
@@ -89,7 +86,9 @@ def catalogupdate
           end
         end
 
+
       if params[:upd][:color]!='' then #проверка цвета
+
         if k==1 then
           condit= condit+' and '+"color= '#{params[:upd][:color]}'"
         else
@@ -177,10 +176,12 @@ def catalogupdate
           if params[:update_type][:shin]=='yes' then
           condit="shin=1"
           else
+
           condit="shin='0'"
           end
         end
       end
+
 
 # if params[:upd][:name]!='' then
         @conditions=condit
@@ -335,6 +336,7 @@ def catalogdel
       end
       end
         if params[:upd][:dlinamin]!= '' then
+
           condit="dlina>= '#{params[:upd][:dlinamin]}'"
           k=1
           if params[:upd][:dlinamax]!= '' then
@@ -374,7 +376,8 @@ def catalogdel
           end
         end
 
-      if params[:upd][:color]!='' then #проверка цвета
+      if params[:upd][:color]!='' then  #проверка цвета
+
         if k==1 then
           condit= condit+' and '+"color= '#{params[:upd][:color]}'"
         else
@@ -383,7 +386,8 @@ def catalogdel
         end
       end
 
-      if params[:update_type][:shin]!='all' then #проверка шины
+      if params[:update_type][:shin]!='all' then  #проверка шины
+
         if k==1 then
           if params[:update_type][:shin]=='yes' then
           condit= condit+' and '+"shin=1"
@@ -400,6 +404,7 @@ def catalogdel
           end
         end
       end
+
 
 # if params[:upd][:name]!='' then
         @conditions=condit
@@ -439,7 +444,8 @@ def destroy
  end
 redirect_to :controller => :director, :action => :ok
 end
- 
+end
+
 
 
 
@@ -447,5 +453,6 @@ end
 def ok
 end
 
-end
+
+
 end

@@ -21,9 +21,8 @@ development:
   database: inkard2
   pool: 5
   username: root
-  password:
-  socket: /var/lib/mysql/mysql.sock
-
+  password: 123
+  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -35,8 +34,8 @@ test:
   database: inkard2_test
   pool: 5
   username: root
-  password:
-  socket: /var/lib/mysql/mysql.sock
+  password: 123
+  host: localhost
 
 production:
   adapter: mysql
@@ -45,5 +44,6 @@ production:
   database: inkard2_production
   pool: 5
   username: root
-  password:
-  socket: /var/lib/mysql/mysql.sock
+  password: 123
+  host: localhost
+

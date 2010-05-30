@@ -1,5 +1,6 @@
 class AutorizController < ApplicationController
   def autoriz
+
     @autorization= Autorization.new()
 
     if request.post?
@@ -18,14 +19,13 @@ class AutorizController < ApplicationController
          redirect_to :controller=>'nachpr', :action=>'neworder'
          end
        #!!!!!!!!!!!!!!! ТУТ ДОБАВЛЯЙТЕ СВОИ РАБОЧИЕ МЕСТА : МЕНЕДЖЕР= ID=5, ЗАВСКЛАД ID=3
-         if @user.id=5 then
-           redirect_to :controller=>'managerr', :action=>'index'
+         if @user.id==5 then
+           redirect_to :controller=>'manager', :action=>'index'
          end
        end
 
       end
     end
   end
-
 
 
