@@ -1,0 +1,38 @@
+<h1 class="zagatpage">Редактируемые поставщики</h1>
+<table class="table" border="1" cellspacing="0" cellpadding="4">
+  <tr>
+    <td>Организация</td>
+    <td>ФИО поставщика</td>
+    <td>Юридический адрес</td>
+    <td>Физический адрес</td>
+	<td>Телефон</td>
+    <td>ИНН</td>
+    <td>КПП</td>
+    <td>р/с</td>
+    <td>к/с</td>
+    <td>БИК</td>
+    <td>Банк</td>
+    <td>Редактировать</td>
+  </tr>
+ <% form_for :update_type do |s| %>
+  <% @allproviders.each {|p|  %>
+    <tr>
+      <td><%= p.p_org %></td>
+      <td><%= p.p_fio %></td>
+      <td><%= p.p_adrur %></td>
+      <td><%= p.p_adrfiz %></td>
+      <td><%= p.p_tel %></td>
+      <td><%= p.p_inn %></td>
+      <td><%= p.p_kpp%></td>
+      <td><%= p.p_rs %> </td>
+      <td><%= p.p_ks %> </td>
+      <td><%= p.p_bik %></td>
+      <td><%= p.p_bank %></td>
+      <td><%= s.radio_button("type", p.id, :checked => true) %></td>
+    </tr>
+    <% } %>
+</table>
+<br/>
+<%= submit_tag 'Изменить' %><br/>
+
+<% end %>

@@ -17,30 +17,28 @@
      <li class="zagolovok">Заказы</li>
        <ul>
         <li><%= link_to "Редактировать заказы", :action => "orders"%></li>
-        <li><%= link_to "Новый заказ" %></li>
+        <li><%= link_to "Новый заказ", :action => "neworder" %></li>
        </ul> 
-     <li class="zagolovok"> Просмотреть закупки</li>
+     <li class="zagolovok">Закупки</li>
         <ul>
-          <li><%= link_to "Новые требуемые" %> </li>
-          <li><%= link_to "Просроченные" %> </li>
+          <li><%= link_to "Редактировать закупки" %> </li>
+          <li><%= link_to "Новая закупка" %> </li>
         </ul>
-     <li class="zagolovok"><%= link_to "Редактировать закупки" %></li>
-     <li class="zagolovok"><%= link_to "Новая закупка" %></li>
      <li class="zagolovok">Клиенты</li>
         <ul>
           <li><%= link_to "Редактировать данные", :action =>"clients" %> </li>
-          <li><%= link_to "Новый клиент" %> </li>
+          <li><%= link_to "Новый клиент", :action => "newclient" %> </li>
         </ul>
      <li class="zagolovok"><%= link_to "Каталог товаров", :action => "catalogs" %></li>
      <li class="zagolovok">Поставщики</li>
         <ul>
-          <li><%= link_to "Редактировать данные" %> </li>
-          <li><%= link_to "Новый поставщик" %> </li>
+          <li><%= link_to "Редактировать данные", :action => "providers" %> </li>
+          <li><%= link_to "Новый поставщик", :action => "newprovider" %> </li>
         </ul>
      <li class="zagolovok">Поставки</li>
         <ul>
-          <li><%= link_to "Редактировать данные" %> </li>
-          <li><%= link_to "Новая поставка" %> </li>
+          <li><%= link_to "Редактировать данные", :action => "deliveries" %> </li>
+          <li><%= link_to "Новая поставка", :action => "newdelivery" %> </li>
         </ul>
      <li class="zagolovok"><%= link_to "Возврат" %></li>
    </ul>

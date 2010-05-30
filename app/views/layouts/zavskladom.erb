@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>рабочее место:Заведующий складом</title>
+        <%= stylesheet_link_tag 'forall' %>
+
+  </head>
+
+
+
+
+<body>
+  <div class="mainmenu">
+  Рабочее мето : Заведующий складом
+   <ul>
+     <li class="zagolovok">Учёт поставляемых комплектующих</li>
+     <ul>
+        <li><%= link_to "Просмотр ожидаемых поставок комплектующих" , :action =>"purcase"%> </li>
+         <li><%= link_to "Присвоение даты поставки комплектующих" , :action =>"datepurcase"%> </li>
+         <li><%= link_to "Изменение данных о количестве комплектующих" , :action =>"kolchangepurcase"%> </li>
+         <li><%= link_to "Удаление данных о комплектующих" , :action =>"deletdata"%></li>
+         <li><%= link_to "Cписание брака комплектующих" , :action =>"brakpurcase"%></li>
+        </ul>
+
+
+     <li class="zagolovok"> Учёт готовой продукции</li>
+
+
+<ul>
+        <li><%= link_to "Изменение данных о состоянии готовой продукции" , :action =>"datareadychange"%> </li>
+         <li><%= link_to "Просмотр информации о готовой продукции", :action =>"showready"%> </li>
+         <li><%= link_to "Удаление информации о готовой продукции" , :action =>"deletready"%> </li>
+         <li><%= link_to "Списание брака готовой продукции" , :action =>"brakready"%></li>
+        </ul>
+
+   </ul>
+  </div>
+  <div class="right"><%= yield :layout %>
+    </div>
+</body>
+</html>

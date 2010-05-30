@@ -1,0 +1,71 @@
+<%= @conditions %>
+<%form_for [@catalog], :url => { :actions => "update_one"}  do |f| %>
+
+<table>
+  <tr>
+    <td>Наименование:</td>
+    <td><%=@catone.name%> </td>
+    <td>=>
+ 
+ <%= f.text_field :name %>
+ <%= error_message_on 'catalog', 'name'  %>
+    </td>
+  </tr>
+
+<tr>
+  <td>Артикул:</td>
+  <td><%=@catone.art%> </td>
+  <td>=> <%= f.text_field :art %>
+<%= error_message_on 'catalog', 'art'  %></td>
+
+
+</tr>
+
+
+
+<tr>
+  <td>Длина карниза:</td>
+   <td><%=@one.dlina%> </td>
+   <td>=>
+ <%= text_field :description, :dlina %>
+ <%= error_message_on 'description', 'dlina'  %>
+   </td>
+</tr>
+
+<tr>
+  <td>
+ Шина:</td>
+  <td><%=@one.shin%> </td>
+  <td>=>
+
+<%= check_box :description, :shin %>есть</td>
+</tr>
+
+<tr>
+  <td>
+ Цвет:</td>
+  <td><%=@one.color%> </td>
+ <td>=><%= text_field :description, :color %>
+<%= error_message_on 'description', 'color'  %></td>
+
+</tr>
+
+
+<tr>
+  <td>Цена,руб.:</td>
+  <td><%=@one.cost%> </td>
+  <td>=>
+ <%= text_field :description, :cost %>
+<%= error_message_on 'description', 'cost'  %></td>
+
+</tr>
+</table>
+<p>
+ <%= submit_tag "Изменить " %>
+</p>
+<% end %>
+
+ 
+
+
+

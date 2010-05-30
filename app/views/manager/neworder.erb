@@ -1,0 +1,40 @@
+<p class="zagatpage">Новый заказ </p>
+
+
+  <% unless flash[:notice].blank? %>
+<div><%= flash[:notice] %></div>
+<% end %>
+
+
+<%form_for [@order], :url => { :actions => "neworder"} do |f| %>
+
+        <p class="zagmin">№ договора:<br/>
+          <%= f.text_field :d_no %>
+	  <%= error_message_on 'order', 'd_no'  %>
+        </p>
+	
+		<p class="zagmin">id Заказчика:<br/>
+          <%=f.text_field  :client_id%>
+        </p>
+
+        <p class="zagmin">Сумма:<br/>
+          <%=f.text_field :asum%>
+        </p>
+
+	    <p class="zagmin">Дата оформления:<br/>
+          <%=f.text_field :datago%>
+        </p>
+
+	    <p class="zagmin">Срок исполнения:<br/>
+          <%=f.text_field :datastop%>
+        </p>
+        
+        <br/><br/>
+        
+        <p class="zagmin">Артикул:<%= text_field :ready, :description_id%> Количество:<%= text_field :ready, :kol%><br/>
+        </p>
+        
+        
+
+        <%= submit_tag "OK" %>
+<%end%> 

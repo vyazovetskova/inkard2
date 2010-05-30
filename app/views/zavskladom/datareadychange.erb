@@ -1,0 +1,12 @@
+<h1> Изменение данных о состянии готовой продукции </h1>
+<% form_for :update_type do |s| %>
+        <%= s.radio_button("type", "all", :checked => true ) %>Выбрать для удаления весь список<br>
+        <%= s.radio_button("type", "condit") %>Выбрать для удаления по условиям:<br/><br/>
+
+        <p>Номер договора:<br>
+        <%= text_field :upd, :d_no %>
+        </p>
+      
+
+        <%= submit_tag "Искать" %>
+        <%end%>

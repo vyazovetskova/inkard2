@@ -1,0 +1,38 @@
+<h1 class="zagatpage">Редактируемые клиенты</h1>
+<table class="table" border="1" cellspacing="0" cellpadding="4">
+  <tr>
+    <td>Организация</td>
+    <td>ФИО клиента</td>
+    <td>Юридический адрес</td>
+    <td>Физический адрес</td>
+	<td>Телефон</td>
+    <td>ИНН</td>
+    <td>КПП</td>
+    <td>р/с</td>
+    <td>к/с</td>
+    <td>БИК</td>
+    <td>Банк</td>
+    <td>Редактировать</td>
+  </tr>
+ <% form_for :update_type do |s| %>
+  <% @allclients.each {|u|  %>
+    <tr>
+      <td><%= u.cl_org %></td>
+      <td><%= u.cl_fio %></td>
+      <td><%= u.cl_adrur %></td>
+      <td><%= u.cl_adrfiz %></td>
+      <td><%= u.cl_tel %></td>
+      <td><%= u.cl_inn %></td>
+      <td><%= u.cl_kpp%></td>
+      <td><%= u.cl_rs %> </td>
+      <td><%= u.cl_ks %> </td>
+      <td><%= u.cl_bik %></td>
+      <td><%= u.cl_bank %></td>
+      <td><%= s.radio_button("type", u.id, :checked => true) %></td>
+    </tr>
+    <% } %>
+</table>
+<br/>
+<%= submit_tag 'Редактировать' %><br/>
+
+<% end %>

@@ -1,0 +1,37 @@
+<table border="1" cellspacing="0" cellpadding="4">
+
+  <br/>
+<tr>
+<td>Артикул</td>
+<td>Наименование</td>
+<td>Количество</td>
+<td>Резерв</td>
+<td>Брак</td>
+<td>Удалить</td>
+
+
+</tr>
+
+
+<% form_for :del do %>
+<% @catalog.each{|u| %>
+  <tr>
+<td><%=u.art%></td>
+<td><%=u.name%></td>
+<td><%=u.kol%></td>
+<td><%=u.reserv%></td>
+<td><%=u.brak%></td>
+<td><%= check_box :del, u.id %>Удалить</td>
+
+
+</tr>
+  <%}%>
+
+
+</table>
+<%= submit_tag 'Удалить' %>
+
+<% end %>
+<br/>
+
+<!--####-->

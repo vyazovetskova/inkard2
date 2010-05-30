@@ -1,8 +1,9 @@
 class BuhgalterController < ApplicationController
  layout "buhgalter"
 
-
-
+  def index
+    
+  end
 
 
   def clients

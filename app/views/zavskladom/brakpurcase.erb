@@ -1,0 +1,14 @@
+<h1> Списание брака комплектующих </h1>
+<% form_for :update_type do |s| %>
+        <%= s.radio_button("type", "all", :checked => true ) %>Выбрать для редактирования весь список<br>
+        <%= s.radio_button("type", "condit") %>Выбрать для редактирования по условиям:<br/><br/>
+
+        <p>Артикул:<br>
+        <%= text_field :upd, :art %>
+        </p>
+        <p>Наименование:<br>
+        <%= text_field :upd, :name %>
+        </p>
+
+        <%= submit_tag "Искать" %>
+        <%end%>

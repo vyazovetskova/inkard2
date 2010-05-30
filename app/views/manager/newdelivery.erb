@@ -1,0 +1,24 @@
+<p class="zagatpage">Новая поставка</p>
+
+
+  <% unless flash[:notice].blank? %>
+<div><%= flash[:notice] %></div>
+<% end %>
+
+<%form_for [@delivery], :url => { :actions => "newdelivery"} do |f| %>
+	<p class="zagmin">Артикул комплектующего:<br/>
+          <%= f.text_field :art %>
+          
+        </p>
+
+	<p class="zagmin">Цена:<br/>
+          <%=f.text_field  :cost%>
+          <%=  error_message_on 'parts_providers', 'cost'%>
+        </p>
+
+        <p class="zagmin">id Поставщика:<br/>
+          <%=f.text_field :provider_id%>
+        </p>
+
+		<%= submit_tag "OK" %>
+<%end%>

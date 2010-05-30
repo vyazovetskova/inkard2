@@ -1,0 +1,16 @@
+<table border="1" cellspacing="0" cellpadding="4">
+
+  <tr>
+    <td>Артикул</td>
+    <td>Количество</td>
+      </tr>
+<% for order in Part.find(:all) %>
+  <tr>
+    <td><%= order.art %></td> 
+    <td><%= text_field :upd, :kol %></td>
+  </tr>
+
+<% end %>
+
+</table>
+<%= submit_tag 'Сохранить изменения' %>

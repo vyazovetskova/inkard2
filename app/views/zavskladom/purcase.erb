@@ -1,0 +1,17 @@
+<table border="1" cellspacing="0" cellpadding="4">
+  <caption>Просмотр ожидаемых поставок комплектующих</caption>
+  <tr>
+    <td>Номер договора</td>
+    <td>Количество</td>
+    <td>Артикул</td>
+    <td>Дата ожидаемой поставки</td>
+  </tr>
+<% for order in PartsPurchase.find(:all) %>
+  <tr>
+    <td><%= order.purchase.z_no %></td>
+    <td><%= order.kol %></td>
+    <td><%= order.art %></td>
+    <td><%= order.purchase.datadone  %></td>
+  </tr>
+<% end %>
+</table>

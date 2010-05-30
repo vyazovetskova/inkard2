@@ -1,0 +1,106 @@
+<%form_for [@client], :url => { :actions => "update_one_client"}  do |f| %>
+
+<table>
+  <tr>
+    <td>Организация:</td>
+    <td><%=@one.cl_org%> </td>
+    <td>=>
+
+        <%= f.text_field :cl_org %>
+         <%=  error_message_on 'client', 'cl_org'%>
+    </td>
+  </tr>
+
+  <tr>
+    <td>ФИО клиента:</td>
+    <td><%=@one.cl_fio%> </td>
+    <td>=> <%= f.text_field :cl_fio %>
+            <%=  error_message_on 'client', 'cl_fio'%></td>
+
+  </tr>
+
+  <tr>
+    <td>Юридический адрес:</td>
+    <td><%=@one.cl_adrur%> </td>
+    <td>=>
+        <%= f.text_field :cl_adrur %>
+        <%= error_message_on 'client', 'cl_adrur'  %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Фактический адрес:</td>
+    <td><%=@one.cl_adrfiz%> </td>
+    <td>=>
+      <%= f.text_field :cl_adrfiz %>
+      <%= error_message_on 'client', 'cl_adrfiz' %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Телефон:</td>
+    <td><%=@one.cl_tel%> </td>
+    <td>=><%= f.text_field :cl_tel %>
+          <%= error_message_on 'client', 'cl_tel'%>
+    </td>
+  </tr>
+
+  <tr>
+    <td>ИНН:</td>
+    <td><%=@one.cl_inn%> </td>
+    <td>=>
+        <%= f.text_field :cl_inn %>
+       
+    </td>
+  </tr>
+
+  <tr>
+    <td>КПП:</td>
+    <td><%=@one.cl_kpp%> </td>
+    <td>=>
+        <%= f.text_field :cl_kpp %>
+       
+    </td>
+  </tr>
+
+  <tr>
+    <td>р/с:</td>
+    <td><%=@one.cl_rs%> </td>
+    <td>=>
+        <%= f.text_field :cl_rs %>
+       
+    </td>
+  </tr>
+
+  <tr>
+    <td>к/с:</td>
+    <td><%=@one.cl_ks%> </td>
+    <td>=>
+        <%= f.text_field :cl_ks %>
+      
+    </td>
+  </tr>
+
+  <tr>
+    <td>БИК:</td>
+    <td><%=@one.cl_bik%> </td>
+    <td>=>
+        <%= f.text_field :cl_bik %>
+        
+    </td>
+  </tr>
+
+  <tr>
+    <td>Банк:</td>
+    <td><%=@one.cl_bank%></td>
+    <td>=>
+        <%= f.text_field :cl_bank %>
+        <%= error_message_on 'client', 'cl_bank'  %>
+    </td>
+  </tr>
+</table>
+<p>
+ <%= submit_tag "Изменить " %>
+</p>
+<% end %>
+

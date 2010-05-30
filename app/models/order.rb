@@ -8,7 +8,7 @@ class Order < ActiveRecord::Base
   #datastop>datago
   belongs_to :client
   has_many :ready
-
+  validates_presence_of :asum, :datastop, :datago, :message =>"Поле не может быть пустым!"
   def validate
     if self.asum <= 0.0
       errors.add( "Данные введены не верно!")

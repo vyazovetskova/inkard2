@@ -1,0 +1,23 @@
+<table border="1" cellspacing="0" cellpadding="4">
+  <caption>Просмотр информации о готовой продукции</caption>
+  <tr>
+    <td>Номер договора</td>
+    <td>Срок исполнения</td>
+    <td>Артикул</td>
+    <td>Наименование</td>
+    <td>Брак</td>
+    <td>Количество</td>
+    <td>Состояние</td>
+  </tr>
+<% for i in Ready.find(:all) %>
+  <tr>
+    <td><%= i.order.d_no %></td>
+    <td><%= i.order.datastop %></td>
+    <td><%= i.fulart %></td>
+    <td><%= i.description.catalog.name  %></td>
+    <td><%= i.brak %></td>
+    <td><%= i.kol %></td>
+    <td><%= i.sost %></td>
+  </tr>
+<% end %>
+</table>

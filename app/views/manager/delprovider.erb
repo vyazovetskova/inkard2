@@ -1,0 +1,38 @@
+<h1 class="zagatpage">Удаляемые поставщики</h1>
+<table class="table" border="1" cellspacing="0" cellpadding="4">
+  <tr>
+    <td>Организация</td>
+    <td>ФИО поставщика</td>
+    <td>Юридический адрес</td>
+    <td>Физический адрес</td>
+    <td>Телефон</td>
+    <td>ИНН</td>
+    <td>КПП</td>
+    <td>р/с</td>
+    <td>к/с</td>
+    <td>БИК</td>
+    <td>Банк</td>
+    <td></td>
+  </tr>
+  <% form_for :del do %>
+  <% @allproviders.each {|u|  %>
+    <tr>
+      <td><%= u.p_org %></td>
+      <td><%= u.p_fio %></td>
+      <td><%= u.p_adrur %></td>
+      <td><%= u.p_adrfiz %></td>
+      <td><%= u.p_tel %></td>
+      <td><%= u.p_inn %></td>
+      <td><%= u.p_kpp%></td>
+      <td><%= u.p_rs %> </td>
+      <td><%= u.p_ks %> </td>
+      <td><%= u.p_bik %></td>
+      <td><%= u.p_bank %></td>
+      <td><%= check_box :del, u.id %>Удалить</td>
+    </tr>
+    <% } %>
+</table>
+<br/>
+<%= submit_tag 'Удалить' %><br/>
+
+<% end %>

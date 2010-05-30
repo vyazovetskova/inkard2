@@ -1,0 +1,25 @@
+<table border="1" cellspacing="0" cellpadding="4">
+  <caption class="zagatpage">Информация о заказах</caption>
+  <br>
+<tr>
+<td>Номер договора</td>
+<td>Дата оформления</td>
+<td>Срок исполнения</td>
+<td>Сумма</td>
+<td>Состояние</td>
+
+
+
+</tr>
+<% for u in @allorder %>
+  <tr>
+<td><%=  u.d_no%></td>
+<td><%=  u.datago%></td>
+<td><%=  u.datastop%></td>
+<td><%=  u.asum%></td>
+<td><%=  @sostzak[u.id]%></td>
+
+
+</tr>
+  <%end%>
+</table>

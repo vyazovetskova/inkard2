@@ -1,0 +1,27 @@
+<table border="1" cellspacing="0" cellpadding="4">
+
+  <tr>
+    <td>Наименование</td>
+    <td>Артикул</td>
+    <td>Цена</td>
+    <td>Количество</td>
+    <td>Состояниел</td>
+
+  </tr>
+<% for order in Ready.find(:all) %>
+  <tr>
+    <td><%= order.description.catalog.name %></td>
+    <td><%= order.fulart %></td>
+    <td><%= order.description.cost %></td>
+    <td><%= order.kol %></td>
+
+    <td>
+        <%= text_field :upd, :sost %>
+    </td>
+
+  </tr>
+
+<% end %>
+
+</table>
+<%= submit_tag 'Сохранить изменения' %>

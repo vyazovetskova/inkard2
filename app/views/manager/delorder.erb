@@ -1,0 +1,38 @@
+<h1 class="zagatpage">Удаляемые заказы</h1>
+<table class="table" border="1" cellspacing="0" cellpadding="4">
+  <tr>
+    <td>№ договора</td>
+    <td>Организация</td>
+    <td>ФИО заказчика</td>
+    <td>Телефон</td>
+    <td>Юридический адрес</td>
+    <td>Физический адрес</td>
+    <td>Сумма</td>
+    <td>Артикул</td>
+    <td>Состояние</td>
+    <td>Дата оформления</td>
+    <td>Срок исполнения</td>
+    <td></td>
+  </tr>
+  <% form_for :del do %>
+  <% for ready in @orders.find(:all)  %>
+    <tr>
+      <td><%= ready.order.d_no %></td>
+      <td><%= ready.order.client.cl_org %></td>
+      <td><%= ready.order.client.cl_fio %></td>
+      <td><%= ready.order.client.cl_tel %></td>
+      <td><%= ready.order.client.cl_adrur %></td>
+      <td><%= ready.order.client.cl_adrfiz %></td>
+      <td><%= ready.order.asum %></td>
+      <td><%= ready.description.fulart %> </td>
+      <td><%= ready.sost %> </td>
+      <td><%= ready.order.datago %></td>
+      <td><%= ready.order.datastop %></td>
+      <td><%= check_box :del, ready.id %>Удалить</td>
+    </tr>
+    <% end %>
+</table>
+<br/>
+<%= submit_tag 'Удалить' %><br/>
+
+<% end %>

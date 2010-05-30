@@ -1,0 +1,25 @@
+
+<table border="1" cellspacing="0" cellpadding="4">
+  <caption class="zagatpage">Новые заказ-наряды</caption>
+  <br>
+  <tr>
+  <td>Номер договора</td>
+  <td>Артикул</td>
+  <td>Количество</td>
+  
+  <td>Срок исполнения</td>
+  </tr>
+
+<% for u in @newready %>
+  <tr>
+<td><%=  u.order.d_no%></td>
+<td><%= u.description.fulart %></td>
+<td><%=  u.kol%></td>
+
+<td><%=  u.order.datastop%></td>
+
+
+
+</tr>
+  <%end%>
+</table>

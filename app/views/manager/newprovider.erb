@@ -1,0 +1,66 @@
+<p class="zagatpage">Новый поставщик</p>
+
+
+  <% unless flash[:notice].blank? %>
+<div><%= flash[:notice] %></div>
+<% end %>
+
+<%form_for [@provider], :url => { :actions => "newprovider"} do |p| %>
+	<p class="zagmin">Организация:<br/>
+          <%= p.text_field :p_org %>
+          <%=  error_message_on 'provider', 'p_org'%>
+        </p>
+
+	<p class="zagmin">ФИО поставщика:<br/>
+          <%=p.text_field  :p_fio%>
+          <%=  error_message_on 'provider', 'p_fio'%>
+        </p>
+
+        <p class="zagmin">Юридический адрес:<br/>
+          <%=p.text_field :p_adrur%>
+          <%=  error_message_on 'provider', 'p_adrur'%>
+        </p>
+
+	<p class="zagmin">Фактический адрес:<br/>
+          <%=  p.text_field :p_adrfiz%>
+          <%=  error_message_on 'provider', 'p_adrfiz'%>
+        </p>
+
+        <p class="zagmin">Телефон:<br/>
+          <%=p.text_field :p_tel%>
+          <%=  error_message_on 'provider', 'p_tel'%>
+        </p>
+		
+        <p class="zagmin">ИНН:<br/>
+          <%=p.text_field :p_inn%>
+          <%=  error_message_on 'provider', 'p_inn'%>
+        </p>
+		
+	<p class="zagmin">КПП:<br/>
+          <%=p.text_field :p_kpp%>
+          <%=  error_message_on 'provider', 'p_kpp'%>
+        </p>
+		
+	<p class="zagmin">р/с:<br/>
+          <%=p.text_field :p_rs%>
+          <%=  error_message_on 'provider', 'p_rs'%>
+        </p>
+		
+	<p class="zagmin">к/с:<br/>
+          <%=p.text_field :p_ks%>
+          <%=  error_message_on 'provider', 'p_ks'%>
+        </p>
+		
+	<p class="zagmin">БИК:<br/>
+          <%=p.text_field :p_bik%>
+          <%=  error_message_on 'provider', 'p_bik'%>
+        </p>
+		
+	<p class="zagmin">Банк:<br/>
+          <%=p.text_field :p_bank%>
+          <%=  error_message_on 'provider', 'p_bank'%>
+        </p>
+		
+          <%= submit_tag "OK" %>
+<%end%>
+

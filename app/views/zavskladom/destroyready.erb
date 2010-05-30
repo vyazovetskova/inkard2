@@ -1,0 +1,36 @@
+<table border="1" cellspacing="0" cellpadding="4">
+
+  <br/>
+<tr>
+<td>Номер договора</td>
+<td>Срок исполнения</td>
+<td>Наименование</td>
+<td>Артикул</td>
+<td>Количество</td>
+<td>Состояние</td>
+<td>Удалить</td>
+
+
+</tr>
+
+
+<% for u in Ready.find(:all) %>
+  <tr>
+<td><%=u.d_no%></td>
+<td><%=u.order.datastop%></td>
+<td><%=u.description.catalog.name%></td>
+<td><%=u.fulart%></td>
+<td><%=u.kol%></td>
+<td><%=u.sost%></td>
+<td><%= check_box :del, u.id %>Удалить</td>
+
+
+</tr>
+
+
+
+</table>
+<%= submit_tag 'Удалить' %>
+
+<% end %>
+<br/>

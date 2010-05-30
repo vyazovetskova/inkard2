@@ -1,0 +1,23 @@
+<div align="center">
+  <p class="mainmenu"> Вход в систему</p>
+  <%form_for [@autorization], :url => { :actions => "autoriz"} do |f| %>
+  <p>
+ Логин:<br />
+ <%= f.select(:id, [ ['Директор',1],
+                             ['Бухгалтер', 2],
+                             ['Заведующий складом',3],
+                             ['Начальник производства', 4],
+                             ['Менеджер' ,5]])  %>
+
+
+</p>
+<p>
+ Пароль:<br />
+ <%= f.password_field :password %>
+ <%= error_message_on 'autirozation', 'password'  %>
+
+</p>
+<%= submit_tag "Вход " %>
+  <% end %>
+<%=@er%>
+</div>

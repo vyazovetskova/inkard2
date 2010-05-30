@@ -1,0 +1,94 @@
+<%form_for [@provider], :url => { :actions => "update_one_provider"}  do |f| %>
+
+<table>
+  <tr>
+    <td>Организация:</td>
+    <td><%=@one.p_org%> </td>
+    <td>=>
+        <%= f.text_field :p_org %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>ФИО клиента:</td>
+    <td><%=@one.p_fio%> </td>
+    <td>=> <%= f.text_field :p_fio %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Юридический адрес:</td>
+    <td><%=@one.p_adrur%> </td>
+    <td>=>
+        <%= f.text_field :p_adrur %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Фактический адрес:</td>
+    <td><%=@one.p_adrfiz%> </td>
+    <td>=>
+      <%= f.text_field :p_adrfiz %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Телефон:</td>
+    <td><%=@one.p_tel%> </td>
+    <td>=><%= f.text_field :p_tel %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>ИНН:</td>
+    <td><%=@one.p_inn%> </td>
+    <td>=>
+        <%= f.text_field :p_inn %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>КПП:</td>
+    <td><%=@one.p_kpp%> </td>
+    <td>=>
+        <%= f.text_field :p_kpp %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>р/с:</td>
+    <td><%=@one.p_rs%> </td>
+    <td>=>
+        <%= f.text_field :p_rs %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>к/с:</td>
+    <td><%=@one.p_ks%> </td>
+    <td>=>
+        <%= f.text_field :p_ks %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>БИК:</td>
+    <td><%=@one.p_bik%> </td>
+    <td>=>
+        <%= f.text_field :p_bik %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Банк:</td>
+    <td><%=@one.p_bank%></td>
+    <td>=>
+        <%= f.text_field :p_bank %>
+    </td>
+  </tr>
+</table>
+<p>
+ <%= submit_tag "Изменить " %>
+</p>
+<% end %>
+

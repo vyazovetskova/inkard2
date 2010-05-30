@@ -1,0 +1,34 @@
+<table border="1" cellspacing="0" cellpadding="4">
+
+  <br/>
+<tr>
+<td>Наименование</td>
+<td>Артикул</td>
+<td>Количество</td>
+<td>Брак</td>
+<td>Списать</td>
+
+
+</tr>
+
+
+<% for u in Part.find(:all) %>
+  <tr>
+<td><%=u.name%></td>
+<td><%=u.art%></td>
+<td><%=u.kol%></td>
+<td><%=u.brak%></td>
+<td><%= check_box :del, u.id %>Списать</td>
+
+
+</tr>
+ 
+
+
+</table>
+<%= submit_tag 'Списать' %>
+
+<% end %>
+<br/>
+
+<!--####-->

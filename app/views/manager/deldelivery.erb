@@ -1,0 +1,32 @@
+<h1 class="zagatpage">Удаляемые поставки</h1>
+<table class="table" border="1" cellspacing="0" cellpadding="4">
+  <tr>
+    <td>Организация</td>
+    <td>ФИО поставщика</td>
+    <td>Юридический адрес</td>
+    <td>Физический адрес</td>
+    <td>Телефон</td>
+    <td>ИНН</td>
+    <td>Цена</td>
+    <td>Артикул комплектующего</td>
+    <td></td>
+  </tr>
+  <% form_for :del do %>
+  <% for u in PartsProvider.find(:all)  %>
+    <tr>
+      <td><%= u.provider.p_org %></td>
+      <td><%= u.provider.p_fio %></td>
+      <td><%= u.provider.p_adrur %></td>
+      <td><%= u.provider.p_adrfiz %></td>
+      <td><%= u.provider.p_tel %></td>
+      <td><%= u.provider.p_inn %></td>
+      <td><%= u.cost%></td>
+      <td><%= u.art %> </td>
+      <td><%= check_box :del, u.id %>Удалить</td>
+    </tr>
+    <% end %>
+</table>
+<br/>
+<%= submit_tag 'Удалить' %><br/>
+
+<% end %>

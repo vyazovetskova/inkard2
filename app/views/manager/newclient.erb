@@ -1,0 +1,66 @@
+<p class="zagatpage">Новый клиент</p>
+
+
+  <% unless flash[:notice].blank? %>
+<div><%= flash[:notice] %></div>
+<% end %>
+
+<%form_for [@client], :url => { :actions => "newclient"} do |f| %>
+	<p class="zagmin">Организация:<br/>
+          <%= f.text_field :cl_org %>
+          <%=  error_message_on 'client', 'cl_org'%>
+        </p>
+	
+	<p class="zagmin">ФИО клиента:<br/>
+          <%=f.text_field  :cl_fio%>
+          <%=  error_message_on 'client', 'cl_fio'%>
+        </p>
+
+        <p class="zagmin">Юридический адрес:<br/>
+          <%=f.text_field :cl_adrur%>
+          <%=  error_message_on 'client', 'cl_adrur'%>
+        </p>
+
+	<p class="zagmin">Фактический адрес:<br/>
+          <%=f.text_field :cl_adrfiz%>
+          <%=  error_message_on 'client', 'cl_adrfiz'%>
+        </p>
+
+	<p class="zagmin">Телефон:<br/>
+          <%=f.text_field :cl_tel%>
+          <%=  error_message_on 'client', 'cl_tel'%>
+        </p>
+		
+	<p class="zagmin">ИНН:<br/>
+          <%=f.text_field :cl_inn%>
+          <%=  error_message_on 'client', 'cl_inn'%>
+        </p>
+		
+	<p class="zagmin">КПП:<br/>
+          <%=f.text_field :cl_kpp%>
+          <%=  error_message_on 'client', 'cl_kpp'%>
+        </p>
+		
+	<p class="zagmin">р/с:<br/>
+          <%=f.text_field :cl_rs%>
+          <%=  error_message_on 'client', 'cl_rs'%>
+        </p>
+		
+	<p class="zagmin">к/с:<br/>
+          <%=f.text_field :cl_ks%>
+          <%=  error_message_on 'client', 'cl_ks'%>
+        </p>
+		
+	<p class="zagmin">БИК:<br/>
+          <%=f.text_field :cl_bik%>
+          <%=  error_message_on 'client', 'cl_bik'%>
+        </p>
+		
+	<p class="zagmin">Банк:<br/>
+          <%=f.text_field :cl_bank%>
+          <%=  error_message_on 'client', 'cl_bank'%>
+        </p>
+		
+		<%= submit_tag "OK" %>
+<%end%>
+
