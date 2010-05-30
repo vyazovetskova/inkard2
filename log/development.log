@@ -34908,3 +34908,60 @@ Rendering rescues/layout (internal_server_error)
   [4;36;1mDescription Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
   [4;35;1mCatalog Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `catalogs`[0m
 >>>>>>> 7ab19ed0eac901d5dc6106b4b55bb5b5a3fd1bc5
+  [4;36;1mSQL (257.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (35.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (413.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (14.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (963.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDescriptions (20100513151902)
+Migrating to CreateOrders (20100513151920)
+Migrating to CreatePartsProviders (20100513151947)
+Migrating to CreatePartsPurchases (20100513152006)
+Migrating to CreatePurchases (20100513152044)
+Migrating to CreateReadies (20100513152059)
+Migrating to CreateAutorizations (20100520050423)
+Migrating to CreateParts (20100526170656)
+Migrating to CreatePartReadies (20100530194101)
+  [4;36;1mSQL (1012.6ms)[0m   [0;1mCREATE TABLE `part_readies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description_id` int(11), `part_id` int(11), `kol` int(11), `art_part` varchar(255), `art_ready` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (123.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100530194101')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (223.2ms)[0m   [0mSHOW FIELDS FROM `autorizations`[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mdescribe `autorizations`[0m
+  [4;35;1mSQL (13.8ms)[0m   [0mSHOW KEYS FROM `autorizations`[0m
+  [4;36;1mSQL (33.5ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `catalogs`[0m
+  [4;36;1mSQL (23.6ms)[0m   [0;1mSHOW KEYS FROM `catalogs`[0m
+  [4;35;1mSQL (114.2ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (40.6ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (6.8ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `descriptions`[0m
+  [4;36;1mSQL (17.9ms)[0m   [0;1mSHOW KEYS FROM `descriptions`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `orders`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `orders`[0m
+  [4;36;1mSQL (9.8ms)[0m   [0;1mSHOW FIELDS FROM `part_readies`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `part_readies`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `part_readies`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `parts`[0m
+  [4;35;1mSQL (8.5ms)[0m   [0mSHOW KEYS FROM `parts`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `parts_providers`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `parts_providers`[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mSHOW KEYS FROM `parts_providers`[0m
+  [4;35;1mSQL (15.8ms)[0m   [0mSHOW FIELDS FROM `parts_purchases`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `parts_purchases`[0m
+  [4;35;1mSQL (11.5ms)[0m   [0mSHOW KEYS FROM `parts_purchases`[0m
+  [4;36;1mSQL (29.7ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `purchases`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `purchases`[0m
+  [4;35;1mSQL (6.7ms)[0m   [0mSHOW KEYS FROM `purchases`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `readies`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `readies`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `readies`[0m

@@ -9,8 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-
-ActiveRecord::Schema.define(:version => 20100526170656) do
+ActiveRecord::Schema.define(:version => 20100530194101) do
 
   create_table "autorizations", :force => true do |t|
     t.string   "login"
@@ -63,6 +62,16 @@ ActiveRecord::Schema.define(:version => 20100526170656) do
     t.datetime "updated_at"
   end
 
+  create_table "part_readies", :force => true do |t|
+    t.integer  "description_id"
+    t.integer  "part_id"
+    t.integer  "kol"
+    t.string   "art_part"
+    t.string   "art_ready"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "parts", :force => true do |t|
     t.string   "art"
     t.integer  "reserv"
@@ -111,6 +120,16 @@ ActiveRecord::Schema.define(:version => 20100526170656) do
     t.decimal  "asum",        :precision => 9, :scale => 2
     t.date     "datadone"
     t.integer  "provider_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "readies", :force => true do |t|
+    t.integer  "kol"
+    t.integer  "sost"
+    t.integer  "brak"
+    t.integer  "order_id"
+    t.integer  "description_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

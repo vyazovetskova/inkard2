@@ -21,7 +21,7 @@ development:
   database: inkard2
   pool: 5
   username: root
-  password: 123
+  password: 
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -34,7 +34,7 @@ test:
   database: inkard2_test
   pool: 5
   username: root
-  password: 123
+  password: 
   host: localhost
 
 production:
@@ -44,6 +44,6 @@ production:
   database: inkard2_production
   pool: 5
   username: root
-  password: 123
+  password: 
   host: localhost
 
