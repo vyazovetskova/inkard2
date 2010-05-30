@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100530194101) do
+ActiveRecord::Schema.define(:version => 20100540234202) do
 
   create_table "autorizations", :force => true do |t|
     t.string   "login"
@@ -88,6 +88,7 @@ ActiveRecord::Schema.define(:version => 20100530194101) do
     t.integer  "provider_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "part_id"
   end
 
   create_table "parts_purchases", :force => true do |t|
