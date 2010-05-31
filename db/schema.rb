@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100540234202) do
+ActiveRecord::Schema.define(:version => 20100550254302) do
 
   create_table "autorizations", :force => true do |t|
     t.string   "login"
@@ -97,6 +97,7 @@ ActiveRecord::Schema.define(:version => 20100540234202) do
     t.integer  "kol"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "part_id"
   end
 
   create_table "providers", :force => true do |t|

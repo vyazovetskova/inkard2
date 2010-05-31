@@ -286,12 +286,11 @@ class ManagerController < ApplicationController
   end
 
   def newdelivery
-    @delivery = PartsProvider.new(params[:parts_provider])
+    @PartsProvider = PartsProvider.new(params[:parts_provider])
 
                 if request.post? then
-                  if @delivery.save then
-                    if @delivery.valid? then
-
+                  if @PartsProvider.save then
+                    if @PartsProvider.valid? then
                         redirect_to :controller => :manager, :action => :ok
                     else
                         logger.debug "invalid description"
@@ -302,18 +301,22 @@ class ManagerController < ApplicationController
   end
 
   def deldelivery
-    @alldeliveries=PartsProvider.all
+    @alldeliveries=Provider.all
+    puts  "#########"
     if request.post?
-      @k=params[:del].keys
-      @v=params[:del].values
+      @k=params[:deldeliv].keys
+      @v=params[:deldeliv].values
        for i in 0..@k.length-1
          if @v[i] == "1"
-           id = @k[i].to_i
-            #@delit = Provider.find(id)
-            #@delit.destroy
+              id = @k[i].to_i
+              @delit = PartsProvider.find(id)
+              id2=@delit.provider_id
+              @delit2= Provider.find(id2)
+              @delit.destroy
+              @delit2.destroy
           end
        end
-      redirect_to :controller => :manager, :action => :deldelivery
+      redirect_to :controller => :manager, :action => :ok
    end
   end
 

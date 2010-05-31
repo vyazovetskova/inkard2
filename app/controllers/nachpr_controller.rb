@@ -19,4 +19,32 @@ class NachprController < ApplicationController
    end
  end
 
+ def newreq #новая заявка на комплектующие
+   
+   @req = PartsPurchase.new(params[:parts_purchase])
+
+                if request.post? then
+                  if @req.save then
+                    if @req.valid? then
+                        redirect_to :controller => :nachpr, :action => :nachpr
+                    else
+                        logger.debug "invalid description"
+                    end
+                  else
+                  end
+                end
+ end
+
+ def gpstatus
+   if request.post? then
+     session[:id]=params[:update_type][:type]
+     id=session[:id]
+      @r=Ready.find(id)
+      @r.sost=2
+     
+      redirect_to :controller => :nachpr, :action => :nachpr
+   end
+   @r
+ end
+
 end

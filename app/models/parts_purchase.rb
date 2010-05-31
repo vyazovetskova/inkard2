@@ -6,7 +6,7 @@ class PartsPurchase < ActiveRecord::Base
   belongs_to :purchase
   validates_presence_of :kol, :message =>"Поле не может быть пустым!"
   def validate
-    if PartsPurchase.kol <= 0
+    if self.kol <= 0
       errors.add( "Данные введены не верно!")
     end
   end

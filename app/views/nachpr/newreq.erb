@@ -1,0 +1,32 @@
+<p class="zagatpage">Подача заявки</p>
+
+
+  <% unless flash[:notice].blank? %>
+<div><%= flash[:notice] %></div>
+<% end %>
+
+<%form_for [@req], :url => { :actions => "newreq"} do |f| %>
+	<p class="zagmin">Артикул:<br/>
+          <%= f.text_field :art %>
+        </p>
+
+	<p class="zagmin">id Комплектующего:<br/>
+          <%=f.text_field  :part_id%>
+          <%=  error_message_on 'parts_purchase', 'name'%>
+        </p>
+
+        <p class="zagmin">id Закупки:<br/>
+          <%=f.text_field :purchase_id%>
+
+        </p>
+
+	<p class="zagmin">Количество комплектующих:<br/>
+          <%=f.text_field :kol%>
+          <%=  error_message_on 'parts_purchase', 'cl_adrfiz'%>
+        </p>
+
+
+
+		<%= submit_tag "Сохранить" %>
+<%end%>
+

@@ -5,8 +5,6 @@ class DirectorController < ApplicationController
 
 def newcatalog
   @catalog = Catalog.new(params[:catalog])
-
-
   @description = Description.new(params[:description])
 
   #@description= Catalog.Description.new
@@ -427,11 +425,6 @@ def destroy
    for i in 0..@k.length-1
      if @v[i] == "1"
         id = @k[i].to_i
-       
-        
-        
-
-
         @delit = Description.find(id)
         id2=@delit.catalog_id
         @delit2= Catalog.find(id2)

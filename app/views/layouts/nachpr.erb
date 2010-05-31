@@ -11,7 +11,7 @@
 
 <body>
   <div class="mainmenu">
-  Рабочее мето : Директор
+  Рабочее меcто : Начальник производства
    <ul>
      <li class="zagolovok">Поросмотр заказ-нарядов</li>
      <ul>
@@ -25,14 +25,14 @@
      <li class="zagolovok">Работа с комплектующими</li>
      <ul>
         <li>Просмотр/резервирование </li>
-         <li>Подать заявку </li>
+         <li><%= link_to 'Подать заявку', :action => "newreq" %></li>
          <li>Удалить заявку</li>
         
 
         </ul>
 
 
-     <li class="zagolovok">Учет готовой продукции</li>
+     <li class="zagolovok"><%= link_to 'Учет готовой продукции', :action => "gpstatus" %></li>
      <li class="zagolovok">Набор комплектующих</li>
      <ul>
         <li>Добавление набора </li>

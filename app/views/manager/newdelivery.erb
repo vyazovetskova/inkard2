@@ -5,15 +5,18 @@
 <div><%= flash[:notice] %></div>
 <% end %>
 
-<%form_for [@delivery], :url => { :actions => "newdelivery"} do |f| %>
+<%form_for [@PartsProvider], :url => { :actions => "newdelivery"} do |f| %>
 	<p class="zagmin">Артикул комплектующего:<br/>
           <%= f.text_field :art %>
-          
         </p>
 
-	<p class="zagmin">Цена:<br/>
+        <p class="zagmin">id комплектующего:<br/>
+          <%= f.text_field :part_id %>
+        </p>
+
+	<p class="zagmin">Цена, руб:<br/>
           <%=f.text_field  :cost%>
-          <%=  error_message_on 'parts_providers', 'cost'%>
+          <%=  error_message_on 'PartsProvider', 'cost'%>
         </p>
 
         <p class="zagmin">id Поставщика:<br/>

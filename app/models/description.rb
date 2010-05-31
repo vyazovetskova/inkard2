@@ -18,7 +18,7 @@ class Description < ActiveRecord::Base
       if self.cost<= 0.0
       errors.add("Данные введены не верно!")
     end
-
+  end
 
 private
   
@@ -33,12 +33,7 @@ def make_art
 
 
   end
-#
-#def checkit
-#  if self.cost <= 0 || self.cost > 99999
-#    errors.add(:cost, "Something's wrong!")
-#  end
-#end
+
  
 end
 

@@ -1,0 +1,23 @@
+<h1 class="zagatpage" align="center">Изменение статуса заказа</h1>
+<table class="table" border="1" cellspacing="0" cellpadding="4">
+
+  <tr>
+    <td>№ договора</td>
+    <td>Артикул</td>
+    <td>Состояние</td>
+    <td>Изменить</td>
+  </tr>
+ <% form_for :update_type do |s| %>
+  <% for u in Ready.find(:all) %>
+    <tr> 
+      <td><%= u.order.d_no %></td>
+      <td><%= u.description.fulart %></td>
+      <td><%= u.sost %></td>
+      <td><%= s.radio_button("type", u.id, :checked => true) %></td>
+    </tr>
+    <% end %>
+</table>
+<br/>
+<%= submit_tag 'Изменить' %><br/>
+
+<% end %>
