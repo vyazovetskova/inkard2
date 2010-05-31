@@ -21,8 +21,8 @@
        </ul> 
      <li class="zagolovok">Закупки</li>
         <ul>
-          <li><%= link_to "Редактировать закупки" %> </li>
-          <li><%= link_to "Новая закупка" %> </li>
+          <li><%= link_to "Редактировать закупки", :action => "purchases" %> </li>
+          <li><%= link_to "Новая закупка", :action => "newpurchase" %> </li>
         </ul>
      <li class="zagolovok">Клиенты</li>
         <ul>
@@ -40,7 +40,7 @@
           <li><%= link_to "Редактировать данные", :action => "deliveries" %> </li>
           <li><%= link_to "Новая поставка", :action => "newdelivery" %> </li>
         </ul>
-     <li class="zagolovok"><%= link_to "Возврат" %></li>
+     <li class="zagolovok"><%= link_to "Возврат", :action => "comeback" %></li>
    </ul>
   </div>
 

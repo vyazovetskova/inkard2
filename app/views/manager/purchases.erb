@@ -1,0 +1,10 @@
+<h1 class="zagatpage" align="center">Редактирование закупок</h1>
+
+
+<% form_for :update_type do |s| %>
+        <%= s.radio_button("type", "delz", :checked => true) %>Искать для удаления<br/>
+        <%= s.radio_button("type", "updz") %>Искать для редактирования<br/><br/>
+
+        <%= submit_tag "Искать" %>
+
+    <%end%>

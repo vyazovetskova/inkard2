@@ -22,7 +22,21 @@ class ManagerController < ApplicationController
 
 
   def delorder
-
+    @o=Order.all
+    @c=Client.all
+    
+    if request.post?
+      @k=params[:del].keys
+      @v=params[:del].values
+       for i in 0..@k.length-1
+         if @v[i] == "1"
+            id = @k[i].to_i
+            @delit = Client.find(id)
+            @delit.destroy
+          end
+       end
+      redirect_to :controller => :manager, :action => :delclient
+   end
   end
   
   def updorder
@@ -324,6 +338,29 @@ class ManagerController < ApplicationController
     
   end
 
+  def purchases
+    if request.post? then
+              if params[:update_type][:type]=='delz' then
+                redirect_to :controller => :manager, :action => :delpurchase
+              else
+                redirect_to :controller => :manager, :action => :updpurchase
+              end
+        end
+  end
+
+  def newpurchase
+
+  end
+
+  def delpurchase
+    @allpurchases=Purchase.all
+  end
+
+  def updpurchase
+
+  end
+  
+
   def redies
     @allredies=Ready.all
   end
@@ -331,7 +368,10 @@ class ManagerController < ApplicationController
   def catalogs
     @allCatalog=Catalog.all
   end
-  
+
+  def comeback
+  end
+
   def ok
   end
 

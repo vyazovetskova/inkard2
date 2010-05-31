@@ -38078,3 +38078,986 @@ ActionView::TemplateError (undefined method `p_org' for nil:NilClass) on line #1
 Rendered rescues/_trace (76.4ms)
 Rendered rescues/_request_and_response (0.5ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (135.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#index (for 127.0.0.1 at 2010-05-31 07:50:15) [GET]
+Rendering template within layouts/manager
+Rendering manager/index
+Completed in 186ms (View: 182, DB: 135) | 200 OK [http://localhost/manager]
+  [4;36;1mSQL (5.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 07:50:18) [GET]
+  [4;36;1mReady Load (442.6ms)[0m   [0;1mSELECT * FROM `readies` [0m
+Rendering template within layouts/manager
+Rendering manager/orders
+Completed in 663ms (View: 170, DB: 448) | 200 OK [http://localhost/manager/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 07:50:21) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"del"}}
+  [4;35;1mReady Load (0.5ms)[0m   [0mSELECT * FROM `readies` [0m
+Redirected to http://localhost:3000/manager/delorder
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/manager/orders]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delorder (for 127.0.0.1 at 2010-05-31 07:50:21) [GET]
+Rendering template within layouts/manager
+Rendering manager/delorder
+  [4;36;1mReady Load (0.5ms)[0m   [0;1mSELECT * FROM `readies` [0m
+  [4;35;1mReady Columns (122.5ms)[0m   [0mSHOW FIELDS FROM `readies`[0m
+  [4;36;1mOrder Columns (28.3ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (35.1ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 1) [0m
+  [4;36;1mClient Columns (12.4ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `cl_org' for nil:NilClass) on line #21 of app/views/manager/delorder.erb:
+18:   <% for ready in Ready.find(:all)  %>
+19:     <tr>
+20:       <td><%= ready.order.d_no %></td>
+21:       <td><%= ready.order.client.cl_org %></td>
+22:       <td><%= ready.order.client.cl_fio %></td>
+23:       <td><%= ready.order.client.cl_tel %></td>
+24:       <td><%= ready.order.client.cl_adrur %></td>
+
+    app/views/manager/delorder.erb:21
+    app/views/manager/delorder.erb:18:in `each'
+    app/views/manager/delorder.erb:18
+    app/views/manager/delorder.erb:17
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.2ms)
+Rendered rescues/_request_and_response (13.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 07:51:31) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"del"}}
+  [4;36;1mReady Load (0.5ms)[0m   [0;1mSELECT * FROM `readies` [0m
+Redirected to http://localhost:3000/manager/delorder
+Completed in 54ms (DB: 1) | 302 Found [http://localhost/manager/orders]
+  [4;35;1mSQL (8.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delorder (for 127.0.0.1 at 2010-05-31 07:51:32) [GET]
+  [4;35;1mOrder Load (0.7ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/manager
+Rendering manager/delorder
+  [4;35;1mReady Load (0.4ms)[0m   [0mSELECT * FROM `readies` [0m
+  [4;36;1mReady Columns (11.9ms)[0m   [0;1mSHOW FIELDS FROM `readies`[0m
+  [4;35;1mOrder Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.4ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 1) [0m
+  [4;35;1mClient Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `cl_org' for nil:NilClass) on line #21 of app/views/manager/delorder.erb:
+18:   <% for ready in Ready.find(:all)  %>
+19:     <tr>
+20:       <td><%= ready.order.d_no %></td>
+21:       <td><%= ready.order.client.cl_org %></td>
+22:       <td><%= ready.order.client.cl_fio %></td>
+23:       <td><%= ready.order.client.cl_tel %></td>
+24:       <td><%= ready.order.client.cl_adrur %></td>
+
+    app/views/manager/delorder.erb:21
+    app/views/manager/delorder.erb:18:in `each'
+    app/views/manager/delorder.erb:18
+    app/views/manager/delorder.erb:17
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (5.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#deliveries (for 127.0.0.1 at 2010-05-31 07:52:15) [GET]
+Rendering template within layouts/manager
+Rendering manager/deliveries
+Completed in 100ms (View: 96, DB: 5) | 200 OK [http://localhost/manager/deliveries]
+  [4;35;1mSQL (7.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#deliveries (for 127.0.0.1 at 2010-05-31 07:52:17) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"deld"}}
+Redirected to http://localhost:3000/manager/deldelivery
+Completed in 10ms (DB: 8) | 302 Found [http://localhost/manager/deliveries]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#deldelivery (for 127.0.0.1 at 2010-05-31 07:52:17) [GET]
+  [4;35;1mProvider Load (31.7ms)[0m   [0mSELECT * FROM `providers` [0m
+Rendering template within layouts/manager
+Rendering manager/deldelivery
+  [4;36;1mPartsProvider Load (32.2ms)[0m   [0;1mSELECT * FROM `parts_providers` [0m
+  [4;35;1mPartsProvider Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `parts_providers`[0m
+  [4;36;1mProvider Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mProvider Load (0.4ms)[0m   [0mSELECT * FROM `providers` WHERE (`providers`.`id` = 2) [0m
+
+ActionView::TemplateError (undefined method `p_org' for nil:NilClass) on line #17 of app/views/manager/deldelivery.erb:
+14:   <% form_for :deldeliv do %>
+15:   <% for pp in PartsProvider.find(:all)  %>
+16:     <tr>
+17:       <td><%= pp.provider.p_org%></td>
+18:       <td><%= pp.provider.p_fio%></td>
+19:       <td><%= pp.provider.p_adrur%></td>
+20:       <td><%= pp.provider.p_adrfiz%></td>
+
+    app/views/manager/deldelivery.erb:17
+    app/views/manager/deldelivery.erb:15:in `each'
+    app/views/manager/deldelivery.erb:15
+    app/views/manager/deldelivery.erb:14
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (97.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (6.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 07:53:23) [GET]
+  [4;36;1mReady Load (0.6ms)[0m   [0;1mSELECT * FROM `readies` [0m
+Rendering template within layouts/manager
+Rendering manager/orders
+Completed in 29ms (View: 14, DB: 7) | 200 OK [http://localhost/manager/orders]
+  [4;35;1mSQL (8.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 07:53:24) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"del"}}
+  [4;35;1mReady Load (0.5ms)[0m   [0mSELECT * FROM `readies` [0m
+Redirected to http://localhost:3000/manager/delorder
+Completed in 15ms (DB: 9) | 302 Found [http://localhost/manager/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delorder (for 127.0.0.1 at 2010-05-31 07:53:24) [GET]
+  [4;36;1mOrder Load (0.5ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/manager
+Rendering manager/delorder
+  [4;36;1mReady Load (0.5ms)[0m   [0;1mSELECT * FROM `readies` [0m
+  [4;35;1mReady Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `readies`[0m
+  [4;36;1mOrder Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.4ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 1) [0m
+  [4;36;1mClient Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.5ms)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `cl_org' for nil:NilClass) on line #21 of app/views/manager/delorder.erb:
+18:   <% for ready in Ready.find(:all)  %>
+19:     <tr>
+20:       <td><%= ready.order.d_no %></td>
+21:       <td><%= ready.order.client.cl_org %></td>
+22:       <td><%= ready.order.client.cl_fio %></td>
+23:       <td><%= ready.order.client.cl_tel %></td>
+24:       <td><%= ready.order.client.cl_adrur %></td>
+
+    app/views/manager/delorder.erb:21
+    app/views/manager/delorder.erb:18:in `each'
+    app/views/manager/delorder.erb:18
+    app/views/manager/delorder.erb:17
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (8.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 07:55:04) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"del"}}
+  [4;36;1mReady Load (0.5ms)[0m   [0;1mSELECT * FROM `readies` [0m
+Redirected to http://localhost:3000/manager/delorder
+Completed in 11ms (DB: 9) | 302 Found [http://localhost/manager/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delorder (for 127.0.0.1 at 2010-05-31 07:55:04) [GET]
+  [4;35;1mOrder Load (0.5ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/manager
+Rendering manager/delorder
+  [4;35;1mReady Load (0.4ms)[0m   [0mSELECT * FROM `readies` [0m
+  [4;36;1mReady Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `readies`[0m
+  [4;35;1mOrder Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.4ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 1) [0m
+  [4;35;1mDescription Columns (48.9ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mDescription Load (14.1ms)[0m   [0;1mSELECT * FROM `descriptions` WHERE (`descriptions`.`id` = 2) [0m
+Completed in 166ms (View: 79, DB: 67) | 200 OK [http://localhost/manager/delorder]
+  [4;35;1mSQL (9.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delorder (for 127.0.0.1 at 2010-05-31 07:55:17) [POST]
+  Parameters: {"del"=>{"1"=>"1"}, "commit"=>"Удалить", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g="}
+  [4;35;1mOrder Load (0.4ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM `clients` [0m
+  [4;35;1mClient Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (2.0ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Client with ID=1):
+  app/controllers/manager_controller.rb:34:in `delorder'
+  app/controllers/manager_controller.rb:31:in `each'
+  app/controllers/manager_controller.rb:31:in `delorder'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (5.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 07:55:28) [GET]
+  [4;35;1mReady Load (0.4ms)[0m   [0mSELECT * FROM `readies` [0m
+Rendering template within layouts/manager
+Rendering manager/orders
+Completed in 29ms (View: 14, DB: 6) | 200 OK [http://localhost/manager/orders]
+  [4;36;1mSQL (7.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 07:55:29) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"del"}}
+  [4;36;1mReady Load (0.5ms)[0m   [0;1mSELECT * FROM `readies` [0m
+Redirected to http://localhost:3000/manager/delorder
+Completed in 137ms (DB: 8) | 302 Found [http://localhost/manager/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delorder (for 127.0.0.1 at 2010-05-31 07:55:30) [GET]
+  [4;35;1mOrder Load (0.5ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/manager
+Rendering manager/delorder
+  [4;35;1mReady Load (0.4ms)[0m   [0mSELECT * FROM `readies` [0m
+  [4;36;1mReady Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `readies`[0m
+  [4;35;1mOrder Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.5ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 1) [0m
+  [4;35;1mDescription Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mDescription Load (0.5ms)[0m   [0;1mSELECT * FROM `descriptions` WHERE (`descriptions`.`id` = 2) [0m
+Completed in 72ms (View: 44, DB: 6) | 200 OK [http://localhost/manager/delorder]
+  [4;35;1mSQL (5.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delorder (for 127.0.0.1 at 2010-05-31 07:56:08) [GET]
+  [4;35;1mOrder Load (0.5ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/manager
+Rendering manager/delorder
+  [4;35;1mReady Load (0.5ms)[0m   [0mSELECT * FROM `readies` [0m
+  [4;36;1mReady Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `readies`[0m
+  [4;35;1mOrder Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.5ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 1) [0m
+  [4;35;1mDescription Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mDescription Load (0.5ms)[0m   [0;1mSELECT * FROM `descriptions` WHERE (`descriptions`.`id` = 2) [0m
+Completed in 63ms (View: 42, DB: 11) | 200 OK [http://localhost/manager/delorder]
+  [4;35;1mSQL (276.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (15.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delorder (for 127.0.0.1 at 2010-05-31 08:25:49) [GET]
+  [4;35;1mOrder Load (249.3ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mClient Load (13.7ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/manager
+Rendering manager/delorder
+  [4;35;1mReady Load (11.7ms)[0m   [0mSELECT * FROM `readies` [0m
+  [4;36;1mReady Columns (190.6ms)[0m   [0;1mSHOW FIELDS FROM `readies`[0m
+  [4;35;1mOrder Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (38.1ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 1) [0m
+  [4;35;1mDescription Columns (22.5ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mDescription Load (0.9ms)[0m   [0;1mSELECT * FROM `descriptions` WHERE (`descriptions`.`id` = 2) [0m
+Completed in 2193ms (View: 1121, DB: 820) | 200 OK [http://localhost/manager/delorder]
+  [4;35;1mSQL (6.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#comeback (for 127.0.0.1 at 2010-05-31 08:25:58) [GET]
+Rendering template within layouts/manager
+Rendering manager/comeback
+Completed in 57ms (View: 54, DB: 7) | 200 OK [http://localhost/manager/comeback]
+  [4;35;1mSQL (11.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#comeback (for 127.0.0.1 at 2010-05-31 08:27:47) [GET]
+Rendering template within layouts/manager
+Rendering manager/comeback
+Completed in 83ms (View: 76, DB: 12) | 200 OK [http://localhost/manager/comeback]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#comeback (for 127.0.0.1 at 2010-05-31 08:28:01) [POST]
+  Parameters: {"commit"=>"Печать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g="}
+Rendering template within layouts/manager
+Rendering manager/comeback
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/manager/comeback]
+  [4;35;1mSQL (5.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#newdelivery (for 127.0.0.1 at 2010-05-31 08:28:16) [GET]
+  [4;35;1mPartsProvider Columns (32.9ms)[0m   [0mSHOW FIELDS FROM `parts_providers`[0m
+Rendering template within layouts/manager
+Rendering manager/newdelivery
+Completed in 151ms (View: 39, DB: 39) | 200 OK [http://localhost/manager/newdelivery]
+  [4;36;1mSQL (10.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#newprovider (for 127.0.0.1 at 2010-05-31 08:28:18) [GET]
+  [4;36;1mProvider Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+Rendering template within layouts/manager
+Rendering manager/newprovider
+Completed in 294ms (View: 266, DB: 12) | 200 OK [http://localhost/manager/newprovider]
+  [4;35;1mSQL (6.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#catalogs (for 127.0.0.1 at 2010-05-31 08:28:20) [GET]
+  [4;35;1mCatalog Load (445.9ms)[0m   [0mSELECT * FROM `catalogs` [0m
+Rendering template within layouts/manager
+Rendering manager/catalogs
+  [4;36;1mDescription Load (0.4ms)[0m   [0;1mSELECT * FROM `descriptions` [0m
+  [4;35;1mDescription Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mCatalog Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mCatalog Load (0.5ms)[0m   [0mSELECT * FROM `catalogs` WHERE (`catalogs`.`id` = 1) [0m
+  [4;36;1mCatalog Load (2.7ms)[0m   [0;1mSELECT * FROM `catalogs` WHERE (`catalogs`.`id` = 2) [0m
+Completed in 655ms (View: 44, DB: 458) | 200 OK [http://localhost/manager/catalogs]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#newclient (for 127.0.0.1 at 2010-05-31 08:28:24) [GET]
+  [4;35;1mClient Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Rendering template within layouts/manager
+Rendering manager/newclient
+Completed in 89ms (View: 53, DB: 3) | 200 OK [http://localhost/manager/newclient]
+  [4;36;1mSQL (5.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#clients (for 127.0.0.1 at 2010-05-31 08:28:28) [GET]
+Rendering template within layouts/manager
+Rendering manager/clients
+Completed in 37ms (View: 34, DB: 6) | 200 OK [http://localhost/manager/clients]
+  [4;36;1mSQL (9.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#clients (for 127.0.0.1 at 2010-05-31 08:28:30) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"delc"}}
+Redirected to http://localhost:3000/manager/delclient
+Completed in 6ms (DB: 10) | 302 Found [http://localhost/manager/clients]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delclient (for 127.0.0.1 at 2010-05-31 08:28:30) [GET]
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/manager
+Rendering manager/delclient
+  [4;35;1mClient Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Completed in 109ms (View: 91, DB: 4) | 200 OK [http://localhost/manager/delclient]
+  [4;36;1mSQL (5.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#newpurchase (for 127.0.0.1 at 2010-05-31 08:28:35) [GET]
+Rendering template within layouts/manager
+Rendering manager/newpurchase
+Completed in 32ms (View: 28, DB: 6) | 200 OK [http://localhost/manager/newpurchase]
+  [4;36;1mSQL (6.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#purchases (for 127.0.0.1 at 2010-05-31 08:28:37) [GET]
+Rendering template within layouts/manager
+Rendering manager/purchases
+Completed in 44ms (View: 40, DB: 6) | 200 OK [http://localhost/manager/purchases]
+  [4;36;1mSQL (10.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#purchases (for 127.0.0.1 at 2010-05-31 08:28:41) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"updz"}}
+Redirected to http://localhost:3000/manager/updpurchase
+Completed in 4ms (DB: 11) | 302 Found [http://localhost/manager/purchases]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#updpurchase (for 127.0.0.1 at 2010-05-31 08:28:42) [GET]
+Rendering template within layouts/manager
+Rendering manager/updpurchase
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://localhost/manager/updpurchase]
+  [4;36;1mSQL (11.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#purchases (for 127.0.0.1 at 2010-05-31 08:28:48) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"delz"}}
+Redirected to http://localhost:3000/manager/delpurchase
+Completed in 25ms (DB: 12) | 302 Found [http://localhost/manager/purchases]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delpurchase (for 127.0.0.1 at 2010-05-31 08:28:48) [GET]
+Rendering template within layouts/manager
+Rendering manager/delpurchase
+Completed in 42ms (View: 36, DB: 0) | 200 OK [http://localhost/manager/delpurchase]
+  [4;36;1mSQL (20.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#neworder (for 127.0.0.1 at 2010-05-31 08:28:53) [GET]
+  [4;36;1mOrder Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mReady Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `readies`[0m
+Rendering template within layouts/manager
+Rendering manager/neworder
+Completed in 98ms (View: 40, DB: 25) | 200 OK [http://localhost/manager/neworder]
+  [4;36;1mSQL (5.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 08:28:58) [GET]
+  [4;36;1mReady Load (0.5ms)[0m   [0;1mSELECT * FROM `readies` [0m
+Rendering template within layouts/manager
+Rendering manager/orders
+Completed in 39ms (View: 10, DB: 6) | 200 OK [http://localhost/manager/orders]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 08:29:00) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"del"}}
+  [4;35;1mReady Load (0.4ms)[0m   [0mSELECT * FROM `readies` [0m
+Redirected to http://localhost:3000/manager/delorder
+Completed in 12ms (DB: 2) | 302 Found [http://localhost/manager/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delorder (for 127.0.0.1 at 2010-05-31 08:29:01) [GET]
+  [4;36;1mOrder Load (3.0ms)[0m   [0;1mSELECT * FROM `orders` [0m
+  [4;35;1mClient Load (0.5ms)[0m   [0mSELECT * FROM `clients` [0m
+Rendering template within layouts/manager
+Rendering manager/delorder
+  [4;36;1mReady Load (0.4ms)[0m   [0;1mSELECT * FROM `readies` [0m
+  [4;35;1mReady Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `readies`[0m
+  [4;36;1mOrder Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.4ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 1) [0m
+  [4;36;1mDescription Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+  [4;35;1mDescription Load (0.4ms)[0m   [0mSELECT * FROM `descriptions` WHERE (`descriptions`.`id` = 2) [0m
+Completed in 188ms (View: 158, DB: 8) | 200 OK [http://localhost/manager/delorder]
+  [4;36;1mSQL (10.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 08:29:05) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"update"}}
+  [4;36;1mReady Load (0.5ms)[0m   [0;1mSELECT * FROM `readies` [0m
+Redirected to http://localhost:3000/manager/updorder
+Completed in 11ms (DB: 11) | 302 Found [http://localhost/manager/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#updorder (for 127.0.0.1 at 2010-05-31 08:29:05) [GET]
+Rendering template within layouts/manager
+Rendering manager/updorder
+  [4;35;1mReady Load (0.4ms)[0m   [0mSELECT * FROM `readies` [0m
+  [4;36;1mReady Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `readies`[0m
+  [4;35;1mOrder Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.4ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 1) [0m
+  [4;35;1mClient Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mClient Load (17.5ms)[0m   [0;1mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `cl_org' for nil:NilClass) on line #19 of app/views/manager/updorder.erb:
+16:   <% for ready in Ready.find(:all)  %>
+17:     <tr>
+18:       <td><%= ready.order.d_no %></td>
+19:       <td><%= ready.order.client.cl_org %></td>
+20:       <td><%= ready.order.client.cl_fio %></td>
+21:       <td><%= ready.order.client.cl_tel %></td>
+22:       <td><%= ready.order.client.cl_adrur %></td>
+
+    app/views/manager/updorder.erb:19
+    app/views/manager/updorder.erb:16:in `each'
+    app/views/manager/updorder.erb:16
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (205.0ms)
+Rendered rescues/_request_and_response (34.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (147.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#purchases (for 127.0.0.1 at 2010-05-31 08:33:51) [GET]
+Rendering template within layouts/manager
+Rendering manager/purchases
+Completed in 33ms (View: 29, DB: 147) | 200 OK [http://localhost/manager/purchases]
+  [4;35;1mSQL (134.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#purchases (for 127.0.0.1 at 2010-05-31 08:44:13) [GET]
+Rendering template within layouts/manager
+Rendering manager/purchases
+Completed in 123ms (View: 120, DB: 135) | 200 OK [http://localhost/manager/purchases]
+  [4;35;1mSQL (10.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#purchases (for 127.0.0.1 at 2010-05-31 08:44:17) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"delz"}}
+Redirected to http://localhost:3000/manager/delpurchase
+Completed in 6ms (DB: 11) | 302 Found [http://localhost/manager/purchases]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delpurchase (for 127.0.0.1 at 2010-05-31 08:44:17) [GET]
+Rendering template within layouts/manager
+Rendering manager/delpurchase
+  [4;35;1mPartsPurchase Load (202.4ms)[0m   [0mSELECT * FROM `parts_purchases` [0m
+  [4;36;1mPartsPurchase Columns (98.2ms)[0m   [0;1mSHOW FIELDS FROM `parts_purchases`[0m
+  [4;35;1mPurchase Columns (73.0ms)[0m   [0mSHOW FIELDS FROM `purchases`[0m
+  [4;36;1mPurchase Load (26.4ms)[0m   [0;1mSELECT * FROM `purchases` WHERE (`purchases`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `d_no' for nil:NilClass) on line #20 of app/views/manager/delpurchase.erb:
+17:   <% form_for :del do %>
+18:   <% for pp in PartsPurchase.find(:all)  %>
+19:     <tr>
+20:       <td><%= pp.purchase.d_no %></td>
+21:       <td><%= pp.purchase.provider.p_org%></td>
+22:       <td><%= pp.purchase.provider.p_fio %></td>
+23:       <td><%= pp.purchase.provider.p_tel %></td>
+
+    app/views/manager/delpurchase.erb:20
+    app/views/manager/delpurchase.erb:18:in `each'
+    app/views/manager/delpurchase.erb:18
+    app/views/manager/delpurchase.erb:17
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (204.7ms)
+Rendered rescues/_request_and_response (23.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (12.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#purchases (for 127.0.0.1 at 2010-05-31 08:45:21) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"delz"}}
+Redirected to http://localhost:3000/manager/delpurchase
+Completed in 24ms (DB: 22) | 302 Found [http://localhost/manager/purchases]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delpurchase (for 127.0.0.1 at 2010-05-31 08:45:22) [GET]
+  [4;35;1mPurchase Load (32.0ms)[0m   [0mSELECT * FROM `purchases` [0m
+Rendering template within layouts/manager
+Rendering manager/delpurchase
+  [4;36;1mPartsPurchase Load (0.5ms)[0m   [0;1mSELECT * FROM `parts_purchases` [0m
+  [4;35;1mPartsPurchase Columns (14.8ms)[0m   [0mSHOW FIELDS FROM `parts_purchases`[0m
+  [4;36;1mPurchase Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `purchases`[0m
+  [4;35;1mPurchase Load (0.4ms)[0m   [0mSELECT * FROM `purchases` WHERE (`purchases`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `d_no' for nil:NilClass) on line #20 of app/views/manager/delpurchase.erb:
+17:   <% form_for :del do %>
+18:   <% for pp in PartsPurchase.find(:all)  %>
+19:     <tr>
+20:       <td><%= pp.purchase.d_no %></td>
+21:       <td><%= pp.purchase.provider.p_org%></td>
+22:       <td><%= pp.purchase.provider.p_fio %></td>
+23:       <td><%= pp.purchase.provider.p_tel %></td>
+
+    app/views/manager/delpurchase.erb:20
+    app/views/manager/delpurchase.erb:18:in `each'
+    app/views/manager/delpurchase.erb:18
+    app/views/manager/delpurchase.erb:17
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (5.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#deliveries (for 127.0.0.1 at 2010-05-31 08:54:00) [GET]
+Rendering template within layouts/manager
+Rendering manager/deliveries
+Completed in 52ms (View: 46, DB: 6) | 200 OK [http://localhost/manager/deliveries]
+  [4;36;1mSQL (10.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#deliveries (for 127.0.0.1 at 2010-05-31 08:54:02) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"deld"}}
+Redirected to http://localhost:3000/manager/deldelivery
+Completed in 4ms (DB: 11) | 302 Found [http://localhost/manager/deliveries]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#deldelivery (for 127.0.0.1 at 2010-05-31 08:54:02) [GET]
+  [4;36;1mProvider Load (22.4ms)[0m   [0;1mSELECT * FROM `providers` [0m
+Rendering template within layouts/manager
+Rendering manager/deldelivery
+  [4;35;1mPartsProvider Load (62.4ms)[0m   [0mSELECT * FROM `parts_providers` [0m
+  [4;36;1mPartsProvider Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `parts_providers`[0m
+  [4;35;1mProvider Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mProvider Load (23.0ms)[0m   [0;1mSELECT * FROM `providers` WHERE (`providers`.`id` = 2) [0m
+
+ActionView::TemplateError (undefined method `p_org' for nil:NilClass) on line #17 of app/views/manager/deldelivery.erb:
+14:   <% form_for :deldeliv do %>
+15:   <% for pp in PartsProvider.find(:all)  %>
+16:     <tr>
+17:       <td><%= pp.provider.p_org%></td>
+18:       <td><%= pp.provider.p_fio%></td>
+19:       <td><%= pp.provider.p_adrur%></td>
+20:       <td><%= pp.provider.p_adrfiz%></td>
+
+    app/views/manager/deldelivery.erb:17
+    app/views/manager/deldelivery.erb:15:in `each'
+    app/views/manager/deldelivery.erb:15
+    app/views/manager/deldelivery.erb:14
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (92.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (122.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (235.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (292.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDescriptions (20100513151902)
+Migrating to CreateOrders (20100513151920)
+Migrating to CreatePartsProviders (20100513151947)
+Migrating to CreatePartsPurchases (20100513152006)
+Migrating to CreatePurchases (20100513152044)
+Migrating to CreateReadies (20100513152059)
+Migrating to CreateAutorizations (20100520050423)
+Migrating to CreateParts (20100526170656)
+Migrating to CreatePartReadies (20100530194101)
+Migrating to AddPartidToPartsProvider (20100540234202)
+Migrating to AddPartidToPartsPurchase (20100550254302)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (61.9ms)[0m   [0mSHOW FIELDS FROM `autorizations`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `autorizations`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `autorizations`[0m
+  [4;36;1mSQL (11.6ms)[0m   [0;1mSHOW FIELDS FROM `catalogs`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `catalogs`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `catalogs`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (12.7ms)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `descriptions`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `descriptions`[0m
+  [4;36;1mSQL (11.8ms)[0m   [0;1mSHOW KEYS FROM `descriptions`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `orders`[0m
+  [4;35;1mSQL (11.6ms)[0m   [0mSHOW KEYS FROM `orders`[0m
+  [4;36;1mSQL (28.3ms)[0m   [0;1mSHOW FIELDS FROM `part_readies`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `part_readies`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `part_readies`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `parts`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `parts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `parts_providers`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `parts_providers`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `parts_providers`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `parts_purchases`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `parts_purchases`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `parts_purchases`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `providers`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `providers`[0m
+  [4;36;1mSQL (13.0ms)[0m   [0;1mSHOW KEYS FROM `providers`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `purchases`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `purchases`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `purchases`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `readies`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `readies`[0m
+  [4;36;1mSQL (10.2ms)[0m   [0;1mSHOW KEYS FROM `readies`[0m
+  [4;36;1mSQL (25.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#deliveries (for 127.0.0.1 at 2010-05-31 09:02:39) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"deld"}}
+Redirected to http://localhost:3000/manager/deldelivery
+Completed in 31ms (DB: 26) | 302 Found [http://localhost/manager/deliveries]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#deldelivery (for 127.0.0.1 at 2010-05-31 09:02:40) [GET]
+  [4;36;1mProvider Load (48.8ms)[0m   [0;1mSELECT * FROM `providers` [0m
+Rendering template within layouts/manager
+Rendering manager/deldelivery
+  [4;35;1mPartsProvider Load (13.6ms)[0m   [0mSELECT * FROM `parts_providers` [0m
+  [4;36;1mPartsProvider Columns (18.9ms)[0m   [0;1mSHOW FIELDS FROM `parts_providers`[0m
+  [4;35;1mProvider Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mProvider Load (95.6ms)[0m   [0;1mSELECT * FROM `providers` WHERE (`providers`.`id` = 2) [0m
+
+ActionView::TemplateError (undefined method `p_org' for nil:NilClass) on line #17 of app/views/manager/deldelivery.erb:
+14:   <% form_for :deldeliv do %>
+15:   <% for pp in PartsProvider.find(:all)  %>
+16:     <tr>
+17:       <td><%= pp.provider.p_org%></td>
+18:       <td><%= pp.provider.p_fio%></td>
+19:       <td><%= pp.provider.p_adrur%></td>
+20:       <td><%= pp.provider.p_adrfiz%></td>
+
+    app/views/manager/deldelivery.erb:17
+    app/views/manager/deldelivery.erb:15:in `each'
+    app/views/manager/deldelivery.erb:15
+    app/views/manager/deldelivery.erb:14
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.6ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (5.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 09:02:46) [GET]
+  [4;35;1mReady Load (0.5ms)[0m   [0mSELECT * FROM `readies` [0m
+Rendering template within layouts/manager
+Rendering manager/orders
+Completed in 82ms (View: 55, DB: 6) | 200 OK [http://localhost/manager/orders]
+  [4;36;1mSQL (6.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#orders (for 127.0.0.1 at 2010-05-31 09:02:48) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"del"}}
+  [4;36;1mReady Load (0.4ms)[0m   [0;1mSELECT * FROM `readies` [0m
+Redirected to http://localhost:3000/manager/delorder
+Completed in 21ms (DB: 7) | 302 Found [http://localhost/manager/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#delorder (for 127.0.0.1 at 2010-05-31 09:02:48) [GET]
+  [4;35;1mOrder Load (88.8ms)[0m   [0mSELECT * FROM `orders` [0m
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM `clients` [0m
+Rendering template within layouts/manager
+Rendering manager/delorder
+  [4;35;1mReady Load (0.4ms)[0m   [0mSELECT * FROM `readies` [0m
+  [4;36;1mReady Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `readies`[0m
+  [4;35;1mOrder Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.5ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 1) [0m
+  [4;35;1mDescription Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `descriptions`[0m
+  [4;36;1mDescription Load (19.4ms)[0m   [0;1mSELECT * FROM `descriptions` WHERE (`descriptions`.`id` = 2) [0m
+Completed in 370ms (View: 71, DB: 113) | 200 OK [http://localhost/manager/delorder]
+  [4;35;1mSQL (3.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#neworder (for 127.0.0.1 at 2010-05-31 09:02:51) [GET]
+  [4;35;1mOrder Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mReady Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `readies`[0m
+Rendering template within layouts/manager
+Rendering manager/neworder
+Completed in 76ms (View: 49, DB: 10) | 200 OK [http://localhost/manager/neworder]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#purchases (for 127.0.0.1 at 2010-05-31 09:02:55) [GET]
+Rendering template within layouts/manager
+Rendering manager/purchases
+Completed in 49ms (View: 42, DB: 0) | 200 OK [http://localhost/manager/purchases]
+  [4;35;1mSQL (5.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#newpurchase (for 127.0.0.1 at 2010-05-31 09:02:56) [GET]
+Rendering template within layouts/manager
+Rendering manager/newpurchase
+Completed in 35ms (View: 29, DB: 6) | 200 OK [http://localhost/manager/newpurchase]
+  [4;35;1mSQL (5.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#newclient (for 127.0.0.1 at 2010-05-31 09:03:07) [GET]
+  [4;35;1mClient Columns (18.2ms)[0m   [0mSHOW FIELDS FROM `clients`[0m
+Rendering template within layouts/manager
+Rendering manager/newclient
+Completed in 185ms (View: 156, DB: 24) | 200 OK [http://localhost/manager/newclient]
+  [4;36;1mSQL (5.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#deliveries (for 127.0.0.1 at 2010-05-31 09:03:12) [GET]
+Rendering template within layouts/manager
+Rendering manager/deliveries
+Completed in 55ms (View: 42, DB: 6) | 200 OK [http://localhost/manager/deliveries]
+  [4;36;1mSQL (9.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#deliveries (for 127.0.0.1 at 2010-05-31 09:03:13) [POST]
+  Parameters: {"commit"=>"Искать", "authenticity_token"=>"A8rKcVV95vuGmiSQMLNkpjpoSN1YeJzY/BmYLKkK21g=", "update_type"=>{"type"=>"deld"}}
+Redirected to http://localhost:3000/manager/deldelivery
+Completed in 9ms (DB: 10) | 302 Found [http://localhost/manager/deliveries]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ManagerController#deldelivery (for 127.0.0.1 at 2010-05-31 09:03:13) [GET]
+  [4;36;1mProvider Load (0.5ms)[0m   [0;1mSELECT * FROM `providers` [0m
+Rendering template within layouts/manager
+Rendering manager/deldelivery
+  [4;35;1mPartsProvider Load (0.5ms)[0m   [0mSELECT * FROM `parts_providers` [0m
+  [4;36;1mPartsProvider Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `parts_providers`[0m
+  [4;35;1mProvider Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `providers`[0m
+  [4;36;1mProvider Load (2.0ms)[0m   [0;1mSELECT * FROM `providers` WHERE (`providers`.`id` = 2) [0m
+
+ActionView::TemplateError (undefined method `p_org' for nil:NilClass) on line #17 of app/views/manager/deldelivery.erb:
+14:   <% form_for :deldeliv do %>
+15:   <% for pp in PartsProvider.find(:all)  %>
+16:     <tr>
+17:       <td><%= pp.provider.p_org%></td>
+18:       <td><%= pp.provider.p_fio%></td>
+19:       <td><%= pp.provider.p_adrur%></td>
+20:       <td><%= pp.provider.p_adrfiz%></td>
+
+    app/views/manager/deldelivery.erb:17
+    app/views/manager/deldelivery.erb:15:in `each'
+    app/views/manager/deldelivery.erb:15
+    app/views/manager/deldelivery.erb:14
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (210.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)

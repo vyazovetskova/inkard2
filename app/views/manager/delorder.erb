@@ -15,14 +15,14 @@
     <td></td>
   </tr>
   <% form_for :del do %>
-  <% for ready in @orders.find(:all)  %>
+  <% for ready in Ready.find(:all)  %>
     <tr>
       <td><%= ready.order.d_no %></td>
-      <td><%= ready.order.client.cl_org %></td>
-      <td><%= ready.order.client.cl_fio %></td>
-      <td><%= ready.order.client.cl_tel %></td>
-      <td><%= ready.order.client.cl_adrur %></td>
-      <td><%= ready.order.client.cl_adrfiz %></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>></td>
       <td><%= ready.order.asum %></td>
       <td><%= ready.description.fulart %> </td>
       <td><%= ready.sost %> </td>

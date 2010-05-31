@@ -1,6 +1,7 @@
 class Description < ActiveRecord::Base
   belongs_to :catalog
-
+  has_many :part_ready
+  has_many :ready
   validates_presence_of :dlina, :color, :shin, :cost, :message =>"Поле не может быть пустым!"
   validates_length_of :color, :within => 1..15, :message =>"Данные введены неверно!"
 

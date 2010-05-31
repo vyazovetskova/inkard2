@@ -4,6 +4,7 @@
 class PartsProvider < ActiveRecord::Base
   #cost>0
   belongs_to :provider
+  belongs_to :part
   validates_presence_of :cost, :message =>"Поле не может быть пустым!"
   #def validate
    # if self.cost<= 0.0

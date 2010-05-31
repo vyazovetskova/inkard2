@@ -1,0 +1,38 @@
+<h1 class="zagatpage">Удаляемые закупки</h1>
+<table class="table" border="1" cellspacing="0" cellpadding="4">
+  <tr>
+    <td>№ договора</td>
+    <td>Организация</td>
+    <td>ФИО поставщика</td>
+    <td>Телефон</td>
+    <td>Юридический адрес</td>
+    <td>Физический адрес</td>
+    <td>Сумма, руб</td>
+    <td>Артикул комплектующего</td>
+    <td>Количество</td>
+    <td>Дата поставки</td>
+    <td>Срок исполнения</td>
+    <td></td>
+  </tr>
+  <% form_for :del do %>
+  <% for pp in PartsPurchase.find(:all)  %>
+    <tr>
+      <td><%= pp.purchase.d_no %></td>
+      <td><%= pp.purchase.provider.p_org%></td>
+      <td><%= pp.purchase.provider.p_fio %></td>
+      <td><%= pp.purchase.provider.p_tel %></td>
+      <td><%= pp.purchase.provider.p_adrur %></td>
+      <td><%= pp.purchase.provider.p_adrfiz %></td>
+      <td><%= pp.purchase.p_asum %></td>
+      <td><%= pp.art %> </td>
+      <td><%= pp.kol %> </td>
+      <td><%= pp.purchase.datain %> </td>
+      <td><%= pp.purchase.datadone %></td>
+      <td><%= check_box :del, ready.id %>Удалить</td>
+    </tr>
+    <% end %>
+</table>
+<br/>
+<%= submit_tag 'Удалить' %><br/>
+
+<% end %>
